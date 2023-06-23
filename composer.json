@@ -1,0 +1,22 @@
+{
+    "name": "cloud-castle/crypto-pro-php-api",
+    "license": [
+        "MIT"
+    ],
+    "version": "1.0.0.0",
+    "autoload": {
+        "psr-4": {
+            "CloudCastle\\CryptoProPhpApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Зорин Алексей",
+            "email": "zorinalexey59292@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-mbstring": "*"
+    }
+}
