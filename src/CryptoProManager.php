@@ -103,15 +103,20 @@ final class CryptoProManager
 
     /**
      * Выполнить команду и вернуть результат
+     * @param string|null $msg
      * @return array
      */
-    public function exec(): array
+    public function exec(string|null $msg = null): array
     {
         $command = $this->command;
         if ($this->user) {
             $command = $this->user . ' ' . $this->command;
         }
-        exec($command, $output, $code);
+        if(!$msg){
+            exec($command, $output, $code);
+        }else{
+            extract($this->proc($command, $msg));
+        }
         return compact('output', 'code', 'command');
     }
 
@@ -122,5 +127,24 @@ final class CryptoProManager
             $command = $this->user . ' ' . $this->command;
         }
         return $command;
+    }
+
+    private function proc(string $command, string $msg):array
+    {
+        $pipes = false;
+        $desc = [
+            ["pipe", "r"],
+            ["pipe", "w"],
+            ["file", "/tmp/php_proc_error.txt", "a"]
+        ];
+        $process = proc_open($command, $desc, $pipes);
+        if (is_resource($process)) {
+            fwrite($pipes[0], $msg);
+            fclose($pipes[0]);
+            $output = explode("\n", stream_get_contents($pipes[1]));
+            fclose($pipes[1]);
+            $code = proc_close($process);
+        }
+        return compact('output', 'code', 'command');
     }
 }
