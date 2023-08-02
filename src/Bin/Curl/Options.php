@@ -55,4 +55,11 @@ class Options extends \CloudCastle\CryptoProPhpApi\Abstracts\Options
 
         return $this;
     }
+
+    public function url(string $url):self
+    {
+        $this->setOptions($url);
+
+        return $this;
+    }
 }
