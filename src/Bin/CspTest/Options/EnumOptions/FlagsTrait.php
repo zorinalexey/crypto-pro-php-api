@@ -12,6 +12,7 @@ trait FlagsTrait
     final public function flags(int $flags): self
     {
         $this->setOptions('-flags ' . $flags);
+       
         return $this;
     }
 

@@ -11,6 +11,7 @@ trait SigTimeTrait
     final public function sigTime(): static
     {
         $this->setOptions('-sigtime');
+
         return $this;
     }
 }

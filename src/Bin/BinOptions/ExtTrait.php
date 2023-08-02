@@ -16,7 +16,6 @@ trait ExtTrait
         if ($ext) {
             $this->setOptions($ext . ' ' . $file);
         } else {
-
             $this->setOptions($file);
         }
     }

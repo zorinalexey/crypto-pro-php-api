@@ -12,6 +12,7 @@ trait KeyTrait
     final public function key(string $containerName): self
     {
         $this->setOptions("-key '{$containerName}'");
+
         return $this;
     }
 }

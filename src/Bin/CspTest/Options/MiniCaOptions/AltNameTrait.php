@@ -12,6 +12,7 @@ trait AltNameTrait
     final public function altName(string $name): self
     {
         $this->setOptions('-altname "' . $name . '"');
+
         return $this;
     }
 }

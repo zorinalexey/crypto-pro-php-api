@@ -17,6 +17,7 @@ trait CpLevelTrait
     final public function cpLevel(int $level): self
     {
         $this->setOptions('--cplevel ' . $level);
+
         return $this;
     }
 }

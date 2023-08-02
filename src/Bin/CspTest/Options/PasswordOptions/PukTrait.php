@@ -12,6 +12,7 @@ trait PukTrait
     final public function puk(string $pin): self
     {
         $this->setOptions('-puk ' . $pin);
+
         return $this;
     }
 }

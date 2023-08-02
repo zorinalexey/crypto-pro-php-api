@@ -11,6 +11,7 @@ trait InputFileTrait
     final public function inputFile(string $filePath): self
     {
         $this->setOptions('-infile "' . $filePath . '"');
+       
         return $this;
     }
 }

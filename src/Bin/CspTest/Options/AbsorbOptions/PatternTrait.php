@@ -12,6 +12,7 @@ trait PatternTrait
     final public function pattern(string $pattern): self
     {
         $this->setOptions('-pattern ' . $pattern);
+       
         return $this;
     }
 }

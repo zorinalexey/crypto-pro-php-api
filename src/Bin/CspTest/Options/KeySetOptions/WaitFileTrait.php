@@ -12,6 +12,7 @@ trait WaitFileTrait
     final public function waitFile(string $file): self
     {
         $this->setOptions('-waitfile ' . $file);
+       
         return $this;
     }
 }

@@ -14,6 +14,7 @@ trait PinSrcTrait
     final public function pinSrc(string $pin): self
     {
         $this->setOptions('-pinsrc ' . $pin);
+
         return $this;
     }
 }

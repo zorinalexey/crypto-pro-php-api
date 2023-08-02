@@ -12,6 +12,7 @@ trait AdminPasswdTrait
     final public function adminPassword(string $pin): self
     {
         $this->setOptions('-adminpasswd ' . $pin);
+
         return $this;
     }
 }

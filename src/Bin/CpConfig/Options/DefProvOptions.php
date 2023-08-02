@@ -19,6 +19,7 @@ final class DefProvOptions extends Options
     {
         $opt = new SetDefOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 

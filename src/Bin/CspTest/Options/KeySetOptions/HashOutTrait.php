@@ -11,6 +11,7 @@ trait HashOutTrait
     final public function hashOut(string $file): self
     {
         $this->setOptions('-hashout "' . $file . '"');
+
         return $this;
     }
 }

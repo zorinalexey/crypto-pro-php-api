@@ -12,6 +12,7 @@ trait IssuerTrait
     {
         $opt = new IssuerOptions();
         $this->setOptions($opt);
+       
         return $opt;
     }
 }

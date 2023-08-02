@@ -14,6 +14,7 @@ trait CyclesTrait
     final public function cycles(string $list): self
     {
         $this->setOptions('-cycles ' . $list);
+
         return $this;
     }
 }

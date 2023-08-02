@@ -13,6 +13,7 @@ trait TypeSrcTrait
     final public function typeSrc(string $name): self
     {
         $this->setOptions('-typesrc "' . $name . '"');
+
         return $this;
     }
 }

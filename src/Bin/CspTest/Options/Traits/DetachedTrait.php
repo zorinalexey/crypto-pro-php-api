@@ -11,6 +11,7 @@ trait DetachedTrait
     final public function detached(): static
     {
         $this->setOptions('-detached');
+
         return $this;
     }
 }

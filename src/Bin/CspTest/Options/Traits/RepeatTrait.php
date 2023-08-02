@@ -17,6 +17,7 @@ trait RepeatTrait
     final public function repeat(int $count): self
     {
         $this->setOptions('-repeat ' . $count);
+
         return $this;
     }
 }

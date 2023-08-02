@@ -21,6 +21,7 @@ final class MiniCaOptions extends Options
         $this->setOptions('-ca');
         $opt = new Certificate();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -34,6 +35,7 @@ final class MiniCaOptions extends Options
         $this->setOptions('-crl');
         $opt = new MiniCaCrlOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 }

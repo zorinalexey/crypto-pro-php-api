@@ -11,6 +11,7 @@ trait CadesStrictTrait
     final public function cadesStrict(): static
     {
         $this->setOptions('-cades_strict');
+
         return $this;
     }
 }

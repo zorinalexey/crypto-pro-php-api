@@ -17,6 +17,7 @@ trait CpDllTrait
     final public function cpDll(string $dll): self
     {
         $this->setOptions('--cpdll "' . $dll . '"');
+
         return $this;
     }
 }

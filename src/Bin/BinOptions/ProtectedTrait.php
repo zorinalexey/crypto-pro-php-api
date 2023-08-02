@@ -2,6 +2,9 @@
 
 namespace CloudCastle\CryptoProPhpApi\Bin\BinOptions;
 
+use CloudCastle\CryptoProPhpApi\Bin\CertMgr\Options;
+use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\KeySetOptions\KeySetOptions;
+
 trait ProtectedTrait
 {
 
@@ -11,7 +14,7 @@ trait ProtectedTrait
      * medium
      * high
      * @param string $mode
-     * @return $this
+     * @return ProtectedTrait|Options|KeySetOptions
      */
     final public function protected(string $mode): self
     {
@@ -24,6 +27,7 @@ trait ProtectedTrait
             $mode = 'none';
         }
         $this->setOptions('-protected ' . $mode);
+
         return $this;
     }
 }

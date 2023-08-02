@@ -14,6 +14,7 @@ final class RcChainOptions extends Options
         $this->setOptions('-chain');
         $opt = new RcStoreOption();
         $this->setOptions($opt);
+       
         return $opt;
     }
 
@@ -22,6 +23,7 @@ final class RcChainOptions extends Options
         $this->setOptions('-Chain');
         $opt = new RcStoreOption();
         $this->setOptions($opt);
+       
         return $opt;
     }
 }

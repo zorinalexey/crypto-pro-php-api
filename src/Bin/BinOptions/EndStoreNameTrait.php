@@ -2,12 +2,15 @@
 
 namespace CloudCastle\CryptoProPhpApi\Bin\BinOptions;
 
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\CopyCertOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\CspCertOptions;
+
 trait EndStoreNameTrait
 {
     /**
      * Название конечного хранилища (по умолчанию "My")
      * @param string $store
-     * @return $this
+     * @return CopyCertOptions|EndStoreNameTrait|CspCertOptions
      */
     final public function storeName(string $store): self
     {
@@ -23,6 +26,7 @@ trait EndStoreNameTrait
             $store = 'My';
         }
         $this->setOptions($store);
+
         return $this;
     }
 }

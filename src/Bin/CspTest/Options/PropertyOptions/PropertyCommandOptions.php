@@ -23,6 +23,7 @@ final class PropertyCommandOptions extends Options
         $opt = new CertSearchOptions();
         $this->setOptions('-cert');
         $this->setOptions($opt);
+
         return $opt;
     }
 

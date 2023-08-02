@@ -16,6 +16,7 @@ trait StoreTrait
             $store = 'MEM';
         }
         $this->setOptions('-store ' . $store);
+
         return $this;
     }
 

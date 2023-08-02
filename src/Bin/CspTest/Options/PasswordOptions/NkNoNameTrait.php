@@ -11,6 +11,7 @@ trait NkNoNameTrait
     final public function nkNoName(): self
     {
         $this->setOptions('-nk_noname');
+
         return $this;
     }
 }

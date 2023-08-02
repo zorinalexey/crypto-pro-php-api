@@ -11,6 +11,7 @@ trait PubKeyTrait
     final public function pubKey(string $file): self
     {
         $this->setOptions('-pubkey "' . $file . '"');
+       
         return $this;
     }
 }

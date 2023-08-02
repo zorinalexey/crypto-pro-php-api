@@ -12,6 +12,7 @@ trait RcIssuerTrait
     final public function issuer(string $certFilePath): self
     {
         $this->setOptions('-issuer "' . $certFilePath . '"');
+
         return $this;
     }
 }

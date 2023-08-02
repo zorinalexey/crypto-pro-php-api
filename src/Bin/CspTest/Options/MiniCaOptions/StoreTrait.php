@@ -29,6 +29,7 @@ trait StoreTrait
             $store = $typeStore . 'My';
         }
         $this->setOptions('-rstore ' . $store);
+
         return $this;
     }
 }

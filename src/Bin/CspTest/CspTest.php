@@ -44,6 +44,7 @@ class CspTest extends Bin
         $opt = new LowEncOptions();
         $this->setCommand('-lowenc');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -56,6 +57,7 @@ class CspTest extends Bin
         $opt = new SfEncOptions();
         $this->setCommand('-sfenc');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -69,6 +71,7 @@ class CspTest extends Bin
         $opt = new LowSignOption();
         $this->setCommand('-lowsign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -81,6 +84,7 @@ class CspTest extends Bin
         $opt = new SfSignOptions();
         $this->setCommand('-sfsign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -93,6 +97,7 @@ class CspTest extends Bin
         $opt = new SfSignOptions();
         $this->setCommand('-cmssfsign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -105,6 +110,7 @@ class CspTest extends Bin
         $opt = new IpSecOptions();
         $this->setCommand('-ipsec');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -117,6 +123,7 @@ class CspTest extends Bin
         $opt = new DefaultProviderOptions();
         $this->setCommand('-defprov');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -129,6 +136,7 @@ class CspTest extends Bin
         $opt = new PropertyOptions();
         $this->setCommand('-property');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -141,6 +149,7 @@ class CspTest extends Bin
         $this->setCommand('-hash');
         $opt = new HashOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -153,6 +162,7 @@ class CspTest extends Bin
         $this->setCommand('-certkey');
         $opt = new CertKeyOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -165,6 +175,7 @@ class CspTest extends Bin
         $this->setCommand('-absorb');
         $opt = new AbsorbOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -178,6 +189,7 @@ class CspTest extends Bin
         $opt = new stdClass();
         $this->setCommand('-tlss');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -191,6 +203,7 @@ class CspTest extends Bin
         $opt = new stdClass();
         $this->setCommand('-tlsc');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -204,6 +217,7 @@ class CspTest extends Bin
         $this->setCommand('-certlic');
         $opt = new CertLicOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -216,6 +230,7 @@ class CspTest extends Bin
         $this->setCommand('-rc');
         $opt = new RcOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -229,6 +244,7 @@ class CspTest extends Bin
         $this->setCommand('-minica');
         $opt = new MiniCaOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -242,6 +258,7 @@ class CspTest extends Bin
         $this->setCommand('-oid');
         $opt = new OidOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -255,6 +272,7 @@ class CspTest extends Bin
         $this->setCommand('-passwd');
         $opt = new PasswordOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -268,6 +286,7 @@ class CspTest extends Bin
         $this->setCommand('-keycopy');
         $opt = new KeyCopyOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -280,6 +299,7 @@ class CspTest extends Bin
         $this->setCommand('-keyset');
         $opt = new KeySetOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -292,6 +312,7 @@ class CspTest extends Bin
         $opt = new CardOptions();
         $this->setCommand('-card');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -304,6 +325,7 @@ class CspTest extends Bin
         $opt = new EnumOptions();
         $this->setCommand('-enum');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -316,6 +338,7 @@ class CspTest extends Bin
         $opt = new PerfOptions();
         $this->setCommand('-perf');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -328,6 +351,7 @@ class CspTest extends Bin
         $opt = new SpeedOptions();
         $this->setCommand('-speed');
         $this->setOptions($opt);
+
         return $opt;
     }
 }

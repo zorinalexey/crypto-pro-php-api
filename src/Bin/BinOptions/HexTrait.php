@@ -4,10 +4,14 @@ namespace CloudCastle\CryptoProPhpApi\Bin\BinOptions;
 
 trait HexTrait
 {
-
+    /**
+     * @param string $hashFunction
+     * @return \CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\HashOptions|HexTrait
+     */
     final public function hex(string $hashFunction): self
     {
-        setOptions('-hex ' . $hashFunction);
+        $this->setOptions('-hex ' . $hashFunction);
+
         return $this;
     }
 }

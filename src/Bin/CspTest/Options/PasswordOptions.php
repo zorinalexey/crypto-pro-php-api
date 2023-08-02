@@ -20,6 +20,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-newkeyset');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -32,6 +33,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-def');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -44,6 +46,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-showsaved');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -56,6 +59,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-delsaved');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -68,6 +72,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-delshortcut');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -80,6 +85,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-pininfo');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -92,6 +98,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-authinfo');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -104,6 +111,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-deletekeyset');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -116,6 +124,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-check');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -130,6 +139,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-algid ' . $alg);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -144,6 +154,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-change ' . $pin);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -156,6 +167,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-qchange');
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -169,6 +181,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-cchange ' . $pin);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -182,6 +195,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-kchange ' . $truct);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -195,6 +209,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-nchange ' . $truct);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -208,6 +223,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-nk_dupcounts ' . $counts);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -221,6 +237,7 @@ final class PasswordOptions extends Options
         $this->setOptions('-econtainer ' . $enc);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 }

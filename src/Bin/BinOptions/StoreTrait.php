@@ -40,6 +40,7 @@ trait StoreTrait
         } else {
             $this->setOptions('-Store ' . $store);
         }
+
         return $this;
     }
 

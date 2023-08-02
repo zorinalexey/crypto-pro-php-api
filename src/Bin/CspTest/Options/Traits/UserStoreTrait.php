@@ -14,6 +14,7 @@ trait UserStoreTrait
     {
         $opt = new StoreOptions('my');
         $this->setOptions($opt);
+       
         return $opt;
     }
 }

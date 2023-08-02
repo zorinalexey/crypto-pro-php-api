@@ -11,6 +11,7 @@ trait VerifyContextTrait
     final public function verifyContext(): self
     {
         $this->setOptions('-verifycontext');
+
         return $this;
     }
 }

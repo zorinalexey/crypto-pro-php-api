@@ -11,6 +11,7 @@ trait LocalCertTrait
     {
         $opt = new StoreOptions('CERT');
         $this->setOptions($opt);
+
         return $opt;
     }
 }

@@ -11,6 +11,7 @@ trait CadesDisableTrait
     final public function cadesDisable(): static
     {
         $this->setOptions('-cades_disable');
+
         return $this;
     }
 }

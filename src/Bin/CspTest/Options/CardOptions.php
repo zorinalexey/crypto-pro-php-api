@@ -19,6 +19,7 @@ final class CardOptions extends Options
         $this->setOptions('-enum');
         $opt = new EnumsOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -30,6 +31,7 @@ final class CardOptions extends Options
         $this->setOptions('-enum');
         $opt = new SendOptions();
         $this->setOptions($opt);
+
         return $opt;
 
     }

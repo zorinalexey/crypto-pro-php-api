@@ -22,6 +22,7 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-list');
         $this->setOptions(new Options());
+       
         return $this->getOptions();
     }
 
@@ -34,50 +35,55 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-install');
         $this->setOptions(new Options());
+       
         return $this->getOptions();
     }
 
     /**
      * Сменить кодировку сертификата или CRL.
-     * @return Options
+     * @return Options|AbstractOptions
      */
     public function decode(): Options|AbstractOptions
     {
         $this->setCommand('-decode');
         $this->setOptions(new Options());
+       
         return $this->getOptions();
     }
 
     /**
      * Экспортировать сертификат или CRL из хранилища или контейнера в файл.
-     * @return Options
+     * @return Options|AbstractOptions
      */
     public function export(): Options|AbstractOptions
     {
         $this->setCommand('-export');
         $this->setOptions(new Options());
+       
         return $this->getOptions();
     }
 
     /**
      * Удалить сертификат или CRL из хранилища.
-     * @return Options
+     * @return Options|AbstractOptions
      */
     public function delete(): Options|AbstractOptions
     {
         $this->setCommand('-delete');
         $this->setOptions(new Options());
+       
         return $this->getOptions();
     }
 
     /**
      * Вывести перечень вложенных логических хранилищ выбранного хранилища сертификатов.
-     * @return Options
+     * @return Options|AbstractOptions
      */
     public function enumStores(): Options|AbstractOptions
     {
         $this->setCommand('-enumstores');
         $this->setOptions(new Options());
+       
         return $this->getOptions();
     }
 

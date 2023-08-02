@@ -18,6 +18,7 @@ final class EnumOptions extends Options
         $this->setOptions('-test');
         $opt = new EnumOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -29,6 +30,7 @@ final class EnumOptions extends Options
         $this->setOptions('-info');
         $opt = new EnumOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 

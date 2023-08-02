@@ -2,6 +2,12 @@
 
 namespace CloudCastle\CryptoProPhpApi\Bin\BinOptions;
 
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\AddSignfOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\AddSignOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\SignfOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\SignOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\LowEncOptions\EncryptOptions;
+
 trait CertTrait
 {
 
@@ -10,7 +16,7 @@ trait CertTrait
      * @param string|null $add
      * cert|null - добавить в сообщения сертификат отправителя
      * Не добавлять сертификат в сообщения во всех остальных случаях
-     * @return $this
+     * @return SignOptions|CertTrait|AddSignfOptions|AddSignOptions|SignfOptions|EncryptOptions
      */
     final public function certAdd(string|null $add = null): self
     {
@@ -20,6 +26,7 @@ trait CertTrait
             $cert = 'nocert';
         }
         $this->setOptions('-' . $cert);
+       
         return $this;
     }
 }

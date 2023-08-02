@@ -11,6 +11,7 @@ trait HardRngTrait
     final public function hardRng(): self
     {
         $this->setOptions('-hard_rng');
+       
         return $this;
     }
 }

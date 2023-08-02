@@ -12,6 +12,7 @@ trait TypeTrait
             $type = 'ALL';
         }
         $this->setOptions('-type '.$type);
+       
         return $this;
     }
 }

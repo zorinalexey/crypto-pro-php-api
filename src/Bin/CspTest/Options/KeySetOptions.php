@@ -20,6 +20,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-newkeyset');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -32,6 +33,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-addkeypair');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -44,6 +46,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-deletekeyset');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -56,6 +59,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-info');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -68,6 +72,7 @@ final class KeySetOptions extends Options
         $this->setOptions('--check ' . $mask);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -80,6 +85,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-hash ' . $alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -92,6 +98,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-algid ' . $alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -104,6 +111,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-sign ' . $alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -116,6 +124,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-verify ' . $alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -128,6 +137,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-pkverify ' . $alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -140,6 +150,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-enum_containers');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -152,6 +163,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-crc');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -164,6 +176,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-encryptioncarrier');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -177,6 +190,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-export ' . $file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -189,6 +203,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-expcert ' . $file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -201,6 +216,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-impcert ' . $file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -213,6 +229,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-makecert');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -225,6 +242,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-fmakecert ' . $file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -237,6 +255,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-loadext ' . $file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -249,6 +268,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-saveext ' . $file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -261,6 +281,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-cleanext ' . $oid);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -273,6 +294,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-noext');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -285,6 +307,7 @@ final class KeySetOptions extends Options
         $this->setOptions('-stress');
         $opt = new KeySetOpt();
         $this->setOptions($opt);
+
         return $opt;
     }
 

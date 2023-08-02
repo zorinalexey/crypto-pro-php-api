@@ -14,6 +14,7 @@ trait TargetTimeTrait
     final public function targetTime(string $lst): self
     {
         $this->setOptions('-targettime ' . $lst);
+
         return $this;
     }
 }

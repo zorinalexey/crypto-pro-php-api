@@ -23,6 +23,7 @@ final class CertKeyOptions extends Options
     public function userStore(string $name): self
     {
         $this->store('user', $name);
+       
         return $this;
     }
 
@@ -33,6 +34,7 @@ final class CertKeyOptions extends Options
     public function localStore(string $name): self
     {
         $this->store('local', $name, true);
+       
         return $this;
     }
 
@@ -43,6 +45,7 @@ final class CertKeyOptions extends Options
     public function oldProv(string $providerName): self
     {
         $this->setOptions('-oldprov "' . $providerName . '"');
+       
         return $this;
     }
 
@@ -52,6 +55,7 @@ final class CertKeyOptions extends Options
     public function oldProvNull(): self
     {
         $this->setOptions('-oldprovnull');
+       
         return $this;
     }
 
@@ -62,6 +66,7 @@ final class CertKeyOptions extends Options
     public function newProv(string $providerName): self
     {
         $this->setOptions('-newprov "' . $providerName . '"');
+       
         return $this;
     }
 
@@ -72,6 +77,7 @@ final class CertKeyOptions extends Options
     public function flags(int $flag): self
     {
         $this->setOptions('-flags ' . $flag);
+       
         return $this;
     }
 
@@ -81,6 +87,7 @@ final class CertKeyOptions extends Options
     public function show(): self
     {
         $this->setOptions('-show');
+       
         return $this;
     }
 
@@ -90,6 +97,7 @@ final class CertKeyOptions extends Options
     public function change(): self
     {
         $this->setOptions('-change');
+       
         return $this;
     }
 
@@ -99,6 +107,7 @@ final class CertKeyOptions extends Options
     public function newProvNull(): self
     {
         $this->setOptions('-newprovnull');
+       
         return $this;
     }
 }

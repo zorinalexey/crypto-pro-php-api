@@ -14,6 +14,7 @@ trait MaxItersTrait
     final public function maxIters(string $list): self
     {
         $this->setOptions('-maxiters ' . $list);
+       
         return $this;
     }
 }

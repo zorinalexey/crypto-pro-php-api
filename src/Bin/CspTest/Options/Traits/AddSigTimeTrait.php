@@ -11,6 +11,7 @@ trait AddSigTimeTrait
     final public function addSigTime(): static
     {
         $this->setOptions('-addsigtime');
+
         return $this;
     }
 }

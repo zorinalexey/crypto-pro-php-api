@@ -18,6 +18,7 @@ trait ThreadsTrait
     {
         $threads ??= 1;
         $this->setOptions('-threads ' . $threads);
+
         return $this;
     }
 }

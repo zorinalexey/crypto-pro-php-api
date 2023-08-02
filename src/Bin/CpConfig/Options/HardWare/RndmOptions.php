@@ -25,6 +25,7 @@ final class RndmOptions extends Options
     public function bioTui(): self
     {
         $this->setOptions('bio_tui');
+
         return $this;
     }
 
@@ -34,6 +35,7 @@ final class RndmOptions extends Options
     public function configure(): self
     {
         $this->setOptions('-configure');
+
         return $this;
     }
 
@@ -43,6 +45,7 @@ final class RndmOptions extends Options
     public function cpsd(): self
     {
         $this->setOptions('cpsd');
+
         return $this;
     }
 }

@@ -8,6 +8,7 @@ trait FastCodeTrait
     final public function fastCode(): self
     {
         $this->setOptions('-fastcode');
+
         return $this;
     }
 }

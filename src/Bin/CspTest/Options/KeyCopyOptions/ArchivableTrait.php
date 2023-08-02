@@ -8,6 +8,7 @@ trait ArchivableTrait
     final public function achievable(): self
     {
         $this->setOptions('-archivable');
+
         return $this;
     }
 }

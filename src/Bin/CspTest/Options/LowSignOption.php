@@ -18,6 +18,7 @@ final class LowSignOption extends Options
         $opt = new SignOptions();
         $this->setOptions('-sign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -29,6 +30,7 @@ final class LowSignOption extends Options
         $opt = new SignOptions();
         $this->setOptions('-addsign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -40,6 +42,7 @@ final class LowSignOption extends Options
         $opt = new SignOptions();
         $this->setOptions('-verify');
         $this->setOptions($opt);
+
         return $opt;
     }
 }

@@ -11,6 +11,7 @@ trait UniqueTrait
     final public function unique(): self
     {
         $this->setOptions('-unique');
+
         return $this;
     }
 }

@@ -11,6 +11,7 @@ trait FQcnTrait
     final public function fQcn(): self
     {
         $this->setOptions('-fqcn');
+
         return $this;
     }
 }

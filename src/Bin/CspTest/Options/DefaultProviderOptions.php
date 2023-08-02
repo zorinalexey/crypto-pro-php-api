@@ -18,6 +18,7 @@ final class DefaultProviderOptions extends Options
         $this->setOptions('-enum');
         $opt = new DefProviderOptions();
         $this->setOptions($opt);
+       
         return $opt;
     }
 
@@ -26,6 +27,7 @@ final class DefaultProviderOptions extends Options
         $this->setOptions('-enum_type');
         $opt = new DefProviderOptions();
         $this->setOptions($opt);
+       
         return $opt;
     }
 
@@ -34,6 +36,7 @@ final class DefaultProviderOptions extends Options
         $this->setOptions('-get_def');
         $opt = new DefProviderOptions();
         $this->setOptions($opt);
+       
         return $opt;
     }
 }

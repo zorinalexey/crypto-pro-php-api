@@ -44,6 +44,7 @@ final class CryptCp extends Bin
         $opt = new EncryptOptions();
         $this->setCommand('-encr');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -56,6 +57,7 @@ final class CryptCp extends Bin
         $opt = new DecryptOptions();
         $this->setCommand('-decr');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -68,6 +70,7 @@ final class CryptCp extends Bin
         $opt = new HashOptions();
         $this->setCommand('-hash');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -80,6 +83,7 @@ final class CryptCp extends Bin
         $opt = new HashOptions();
         $this->setCommand('-vhash');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -92,6 +96,7 @@ final class CryptCp extends Bin
         $opt = new SignfOptions();
         $this->setCommand('-signf');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -104,6 +109,7 @@ final class CryptCp extends Bin
         $opt = new VSignOptions();
         $this->setCommand('-vsignf');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -116,6 +122,7 @@ final class CryptCp extends Bin
         $opt = new AddSignfOptions();
         $this->setCommand('-addsignf');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -128,6 +135,7 @@ final class CryptCp extends Bin
         $opt = new SignOptions();
         $this->setCommand('-sign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -140,6 +148,7 @@ final class CryptCp extends Bin
         $opt = new AddSignOptions();
         $this->setCommand('-addsign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -152,6 +161,7 @@ final class CryptCp extends Bin
         $opt = new DelSignOptions();
         $this->setCommand('-delsign');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -164,6 +174,7 @@ final class CryptCp extends Bin
         $opt = new VerifyOptions();
         $this->setCommand('-verify');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -176,6 +187,7 @@ final class CryptCp extends Bin
         $opt = new AddAttrOptions();
         $this->setCommand('-addattr');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -188,6 +200,7 @@ final class CryptCp extends Bin
         $opt = new CopyCertOptions();
         $this->setCommand('-copycert');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -200,6 +213,7 @@ final class CryptCp extends Bin
         $opt = new CspCertOptions();
         $this->setCommand('-cspcert');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -212,6 +226,7 @@ final class CryptCp extends Bin
         $opt = new DelCertOptions();
         $this->setCommand('-delcert');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -224,6 +239,7 @@ final class CryptCp extends Bin
         $opt = new CreateRequestOptions();
         $this->setCommand('-createrqst');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -236,6 +252,7 @@ final class CryptCp extends Bin
         $opt = new InstCertOptions();
         $this->setCommand('-instcert');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -248,6 +265,7 @@ final class CryptCp extends Bin
         $opt = new ListDnOptions();
         $this->setCommand('-listdn');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -260,6 +278,7 @@ final class CryptCp extends Bin
         $opt = new CreateUserOptions();
         $this->setCommand('-createuser');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -272,6 +291,7 @@ final class CryptCp extends Bin
         $opt = new CheckRegOptions();
         $this->setCommand('-checkreg');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -284,6 +304,7 @@ final class CryptCp extends Bin
         $opt = new ListTmplOptions();
         $this->setCommand('-listtmpl');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -296,6 +317,7 @@ final class CryptCp extends Bin
         $opt = new CreateCertOptions();
         $this->setCommand('-createcert');
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -308,6 +330,7 @@ final class CryptCp extends Bin
         $opt = new PendCertOptions();
         $this->setCommand('-pendcert');
         $this->setOptions($opt);
+
         return $opt;
     }
 

@@ -2,6 +2,8 @@
 
 namespace CloudCastle\CryptoProPhpApi\Bin\BinOptions;
 
+use CloudCastle\CryptoProPhpApi\Bin\CertMgr\Options;
+
 trait LocationTrait
 {
     /**
@@ -11,7 +13,7 @@ trait LocationTrait
      * machine — показать хранилища Локального компьютера.
      * all_locations — показать все хранилища.
      * @param string $type
-     * @return $this
+     * @return LocationTrait|Options
      */
     final public function location(string $type): self
     {
@@ -24,6 +26,7 @@ trait LocationTrait
             $type = 'user';
         }
         $this->setOptions('-location ' . $type);
+
         return $this;
     }
 }

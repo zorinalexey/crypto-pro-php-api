@@ -21,6 +21,7 @@ final class CryptoProManager
     private Bin|null $command = null;
 
     private string|null $user = null;
+    private Curl $curl;
 
     public function __construct()
     {
@@ -29,6 +30,7 @@ final class CryptoProManager
         $this->cpconfig = new CpConfig();
         $this->cspTest = new CspTest();
         $this->cspTestF = new CspTestF();
+        $this->curl = new Curl();
     }
 
     /**
@@ -42,6 +44,7 @@ final class CryptoProManager
     public function user(string $userName): self
     {
         $this->user .= 'sudo -u ' . $userName;
+       
         return $this;
     }
 
@@ -60,6 +63,7 @@ final class CryptoProManager
     public function certMgr(): CertMgr
     {
         $this->command = $this->certmgr;
+       
         return $this->command;
     }
 
@@ -69,6 +73,7 @@ final class CryptoProManager
     public function cspTest(): CspTest
     {
         $this->command = $this->cspTest;
+       
         return $this->command;
     }
 
@@ -78,6 +83,7 @@ final class CryptoProManager
     public function cspTestF(): CspTestF
     {
         $this->command = $this->cspTestF;
+       
         return $this->command;
     }
 
@@ -88,6 +94,7 @@ final class CryptoProManager
     public function cryptCp(): CryptCp
     {
         $this->command = $this->cryptcp;
+       
         return $this->command;
     }
 
@@ -98,6 +105,7 @@ final class CryptoProManager
     public function cpConfig(): CpConfig
     {
         $this->command = $this->cpconfig;
+       
         return $this->command;
     }
 

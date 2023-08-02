@@ -12,6 +12,7 @@ trait SharedReaderTrait
     final public function sharedReader(string $name): self
     {
         $this->setOptions('-shared_reader ' . $name);
+       
         return $this;
     }
 }

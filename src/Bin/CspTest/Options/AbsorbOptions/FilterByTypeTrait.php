@@ -13,6 +13,7 @@ trait FilterByTypeTrait
     final  public function filterByType(): self
     {
         $this->setOptions('-filterbytype');
+
         return $this;
     }
 }

@@ -10,6 +10,7 @@ trait ResetTriesTrait
     final public function resetTries(): self
     {
         $this->setOptions('-reset_tries');
+
         return $this;
     }
 }

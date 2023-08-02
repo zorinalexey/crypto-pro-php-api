@@ -10,6 +10,7 @@ trait SavePinTrait
     final public function savePin(): self
     {
         $this->setOptions('-savepin');
+
         return $this;
     }
 }

@@ -22,6 +22,7 @@ final class IpSecOptions extends Options
         $this->setOptions('-sign');
         $opt = new SignOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -33,6 +34,7 @@ final class IpSecOptions extends Options
         $this->setOptions('-verify');
         $opt = new SignOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -44,6 +46,7 @@ final class IpSecOptions extends Options
         $this->setOptions('-reg');
         $opt = new RegOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -55,6 +58,7 @@ final class IpSecOptions extends Options
         $this->setOptions('-Reg');
         $opt = new RegOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 }

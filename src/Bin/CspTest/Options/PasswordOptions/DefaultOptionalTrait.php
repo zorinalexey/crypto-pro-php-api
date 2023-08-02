@@ -10,6 +10,7 @@ trait DefaultOptionalTrait
     final public function defaultOptional(): self
     {
         $this->setOptions('-default_optional');
+
         return $this;
     }
 }

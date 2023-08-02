@@ -14,6 +14,7 @@ trait LocalStoreTrait
     {
         $opt = new StoreOptions('MY');
         $this->setOptions($opt);
+
         return $opt;
     }
 }

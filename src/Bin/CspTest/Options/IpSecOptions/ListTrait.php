@@ -11,6 +11,7 @@ trait ListTrait
     final public function listCRL(string $filePath): self
     {
         $this->setOptions('-list "' . $filePath . '"');
+
         return $this;
     }
 }

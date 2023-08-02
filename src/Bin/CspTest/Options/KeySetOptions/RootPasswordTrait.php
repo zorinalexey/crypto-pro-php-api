@@ -12,6 +12,7 @@ trait RootPasswordTrait
     final public function rootPassword(string $pin): self
     {
         $this->setOptions('-rootpassword ' . $pin);
+       
         return $this;
     }
 }

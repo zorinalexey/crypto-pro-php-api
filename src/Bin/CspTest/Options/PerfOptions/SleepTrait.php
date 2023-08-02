@@ -13,6 +13,7 @@ trait SleepTrait
     final public function sleep(): self
     {
         $this->setOptions('-sleep');
+
         return $this;
     }
 }

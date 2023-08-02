@@ -12,6 +12,7 @@ trait ViewTrait
     final public function view(): self
     {
         $this->setOptions('-view');
+       
         return $this;
     }
 }

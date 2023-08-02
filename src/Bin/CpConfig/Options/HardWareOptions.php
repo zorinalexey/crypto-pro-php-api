@@ -13,6 +13,7 @@ final class HardWareOptions extends Options
     {
         $opt = new Reader();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -20,6 +21,7 @@ final class HardWareOptions extends Options
     {
         $opt = new RndmOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 }

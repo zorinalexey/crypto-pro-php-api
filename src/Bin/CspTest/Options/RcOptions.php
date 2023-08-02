@@ -15,6 +15,7 @@ final class RcOptions extends Options
     {
         $opt = new RcChainOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -23,6 +24,7 @@ final class RcOptions extends Options
         $this->setOptions('-reg "' . $filePath . '"');
         $opt = new RcIssuerOption();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -31,6 +33,7 @@ final class RcOptions extends Options
         $this->setOptions('-cert "' . $filePath . '"');
         $opt = new RcIssuerOption();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -39,6 +42,7 @@ final class RcOptions extends Options
         $this->setOptions('-base64');
         $opt = new RcIssuerOption();
         $this->setOptions($opt);
+
         return $opt;
     }
 

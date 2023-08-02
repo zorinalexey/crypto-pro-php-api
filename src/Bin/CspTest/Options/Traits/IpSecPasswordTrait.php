@@ -12,6 +12,7 @@ trait IpSecPasswordTrait
     final public function password(string $password): self
     {
         $this->setOptions('-passwd ' . $password);
+
         return $this;
     }
 }

@@ -12,6 +12,7 @@ trait KTrait
     final public function k(string $n): self
     {
         $this->setOptions('-k ' . $n);
+
         return $this;
     }
 }

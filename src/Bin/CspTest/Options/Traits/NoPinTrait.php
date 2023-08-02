@@ -11,6 +11,7 @@ trait NoPinTrait
     final public function noPin(): self
     {
         $this->setOptions('-nopin');
+       
         return $this;
     }
 }

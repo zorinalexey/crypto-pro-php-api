@@ -12,6 +12,7 @@ trait TypeTrait
     final public function type(string $type): self
     {
         $this->setOptions('-type ' . $type);
+
         return $this;
     }
 }

@@ -7,6 +7,7 @@ trait VerboseTrait
     final public function verbose(): self
     {
         $this->setOptions('-verbose');
+
         return $this;
     }
 

@@ -12,6 +12,7 @@ trait PartReaderTrait
     final public function partReader(string $name): self
     {
         $this->setOptions('-part_reader ' . $name);
+
         return $this;
     }
 }

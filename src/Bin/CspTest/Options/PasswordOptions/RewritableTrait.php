@@ -10,6 +10,7 @@ trait RewritableTrait
     final public function rewritable(): self
     {
         $this->setOptions('-rewritable');
+
         return $this;
     }
 }

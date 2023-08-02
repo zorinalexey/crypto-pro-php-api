@@ -11,6 +11,7 @@ trait SignFileTrait
     final public function sigFile(string $filePath): self
     {
         $this->setOptions('-fsig "' . $filePath . '"');
+
         return $this;
     }
 }

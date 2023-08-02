@@ -11,6 +11,7 @@ trait TCertTrait
     final public function trustedCertificate(string $filePath): self
     {
         $this->setOptions('-tcert "' . $filePath . '"');
+
         return $this;
     }
 }

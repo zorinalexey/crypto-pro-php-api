@@ -25,6 +25,7 @@ final class LicenseOptions extends Options
             mb_strtoupper(trim($license))
         );
         $this->setOptions('-setlocal ' . $license);
+
         return $this;
     }
 }

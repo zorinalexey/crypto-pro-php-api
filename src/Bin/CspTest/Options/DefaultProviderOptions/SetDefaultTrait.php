@@ -13,6 +13,7 @@ trait SetDefaultTrait
         $this->setOptions('-set_def "' . $providerName . '"');
         $opt = new DefProviderOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 

@@ -22,6 +22,7 @@ trait ContainerTrait
     final public function container(string $container): self
     {
         $this->setOptions('-container "' . $container . '"');
+
         return $this;
     }
 }

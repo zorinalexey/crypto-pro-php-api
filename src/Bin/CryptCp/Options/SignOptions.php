@@ -35,7 +35,7 @@ final class SignOptions extends Options
      */
     final public function file(string $outputFile): void
     {
-        $this->setOptions("'" . $outputFile . '"');
+        $this->setOptions("'" . $outputFile . "'");
     }
 
 }

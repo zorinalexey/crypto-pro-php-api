@@ -8,6 +8,7 @@ trait CmsModeTrait
     final public function cmsMode(string $mode): self
     {
         $this->setOptions('-cmsmode "' . $mode . '"');
+
         return $this;
     }
 }

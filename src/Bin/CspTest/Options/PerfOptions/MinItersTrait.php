@@ -14,6 +14,7 @@ trait MinItersTrait
     final public function minIters(string $list): self
     {
         $this->setOptions('-miniters ' . $list);
+
         return $this;
     }
 }

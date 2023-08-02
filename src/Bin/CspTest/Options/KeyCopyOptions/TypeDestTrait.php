@@ -13,6 +13,7 @@ trait TypeDestTrait
     final public function typeDest(string $name): self
     {
         $this->setOptions('-typedest "' . $name . '"');
+
         return $this;
     }
 }

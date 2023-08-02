@@ -15,6 +15,7 @@ trait LengthTrait
     final public function length(int $lengthBits): self
     {
         $this->setOptions('-length ' . $lengthBits);
+
         return $this;
     }
 }

@@ -18,6 +18,7 @@ final class SfSignOptions extends Options
         $this->setOptions('-sign');
         $opt = new SignOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -29,6 +30,7 @@ final class SfSignOptions extends Options
         $this->setOptions('-verify');
         $opt = new SignOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 }

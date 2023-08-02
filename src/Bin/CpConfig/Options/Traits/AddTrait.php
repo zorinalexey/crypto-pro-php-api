@@ -12,6 +12,7 @@ trait AddTrait
     final public function add(): self
     {
         $this->setOptions('-add');
+       
         return $this;
     }
 }

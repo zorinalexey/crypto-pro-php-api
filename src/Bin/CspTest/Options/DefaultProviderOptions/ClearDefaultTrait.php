@@ -14,6 +14,7 @@ trait ClearDefaultTrait
         $this->setOptions('-clear_def "' . $providerName . '"');
         $opt = new DefProviderOptions();
         $this->setOptions($opt);
+       
         return $opt;
     }
 }

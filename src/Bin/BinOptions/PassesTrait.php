@@ -14,6 +14,7 @@ trait PassesTrait
     {
         $threads ??= 1;
         $this->setOptions('-passes ' . $passes);
+
         return $this;
     }
 }

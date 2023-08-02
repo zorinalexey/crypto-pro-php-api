@@ -18,6 +18,7 @@ trait OutputFileTrait
     final public function outputFile(string $filePath): self
     {
         $this->setOptions('-out "' . $filePath . '"');
+
         return $this;
     }
 }

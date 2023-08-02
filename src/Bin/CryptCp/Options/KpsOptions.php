@@ -31,6 +31,7 @@ trait KpsOptions
             $store = '-m';
         }
         $this->setOptions($store);
+       
         return $this;
     }
 
@@ -42,6 +43,7 @@ trait KpsOptions
     final public function certOrMessage(string $file): self
     {
         $this->setOptions("-f '" . $file . "'");
+       
         return $this;
     }
 

@@ -11,6 +11,7 @@ trait NoDataTrait
     final public function noData(): self
     {
         $this->setOptions('-nodata');
+       
         return $this;
     }
 }

@@ -45,6 +45,7 @@ trait GlobalOptionsTrait
     final public function noTime(): self
     {
         $this->setOptions('-notime');
+
         return $this;
     }
 
@@ -54,6 +55,7 @@ trait GlobalOptionsTrait
     final public function pause(): self
     {
         $this->setOptions('-pause');
+
         return $this;
     }
 
@@ -63,6 +65,7 @@ trait GlobalOptionsTrait
     final public function reboot(): self
     {
         $this->setOptions('-reboot');
+
         return $this;
     }
 
@@ -77,6 +80,7 @@ trait GlobalOptionsTrait
             $mode = 3;
         }
         $this->setOptions('-stack ' . $mode);
+
         return $this;
     }
 }

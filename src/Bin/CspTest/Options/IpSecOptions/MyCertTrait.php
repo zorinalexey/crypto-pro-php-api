@@ -11,6 +11,7 @@ trait MyCertTrait
     final public function myCertificate(string $filePath): self
     {
         $this->setOptions('-mycert "' . $filePath . '"');
+
         return $this;
     }
 }

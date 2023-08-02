@@ -26,6 +26,7 @@ final class OidOptions extends Options
     public function machineKeySet(): self
     {
         $this->setOptions('-machinekeyset');
+
         return $this;
     }
 
@@ -35,6 +36,7 @@ final class OidOptions extends Options
     public function general(): self
     {
         $this->setOptions('-general');
+
         return $this;
     }
 
@@ -44,6 +46,7 @@ final class OidOptions extends Options
     public function critical(): self
     {
         $this->setOptions('-critical');
+
         return $this;
     }
 

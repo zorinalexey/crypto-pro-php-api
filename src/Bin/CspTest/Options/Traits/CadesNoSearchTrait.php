@@ -11,6 +11,7 @@ trait CadesNoSearchTrait
     final public function cadesNoSearch(): static
     {
         $this->setOptions('-cades_nosearch');
+       
         return $this;
     }
 }

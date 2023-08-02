@@ -14,6 +14,7 @@ trait PinDestTrait
     final public function pinDest(string $pin): self
     {
         $this->setOptions('-pindest ' . $pin);
+       
         return $this;
     }
 }

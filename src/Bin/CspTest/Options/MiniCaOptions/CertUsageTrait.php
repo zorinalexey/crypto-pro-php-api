@@ -11,6 +11,7 @@ trait CertUsageTrait
     final public function certificateUsage(string $certFilePath): self
     {
         $this->setOptions('-certusage "' . $certFilePath . '"');
+
         return $this;
     }
 }

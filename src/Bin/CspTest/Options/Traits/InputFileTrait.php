@@ -19,6 +19,7 @@ trait InputFileTrait
     final public function inputFile(string $filePath): self
     {
         $this->setOptions('-in "' . $filePath . '"');
+
         return $this;
     }
 }

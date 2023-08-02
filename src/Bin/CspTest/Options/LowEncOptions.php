@@ -17,6 +17,7 @@ final class LowEncOptions extends Options
     {
         $opt = new EncryptOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 
@@ -27,6 +28,7 @@ final class LowEncOptions extends Options
     {
         $opt = new EncryptOptions();
         $this->setOptions($opt);
+
         return $opt;
     }
 }

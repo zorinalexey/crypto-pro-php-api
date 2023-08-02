@@ -10,6 +10,7 @@ trait ResetAdminTrait
     final public function resetAdmin(): self
     {
         $this->setOptions('-reset_admin');
+
         return $this;
     }
 }

@@ -12,6 +12,7 @@ trait CounterTrait
     final public function counter(int $num): self
     {
         $this->setOptions('-counter ' . $num);
+
         return $this;
     }
 }

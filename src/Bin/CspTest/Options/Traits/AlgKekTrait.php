@@ -12,6 +12,7 @@ trait AlgKekTrait
     final public function algKek(string $alg): self
     {
         $this->setOptions('-alg_kek ' . $alg);
+
         return $this;
     }
 }

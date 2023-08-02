@@ -16,6 +16,7 @@ trait SignatureTrait
     final public function signature(string $file): self
     {
         $this->setOptions('-signature "' . $file . '"');
+
         return $this;
     }
 }
