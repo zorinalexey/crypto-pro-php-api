@@ -32,7 +32,7 @@ trait IssuerTrait
     final public function issuer(string $searchString): self
     {
         $this->setOptions("-issuer '" . $searchString . "'");
-       
+
         return $this;
     }
 }

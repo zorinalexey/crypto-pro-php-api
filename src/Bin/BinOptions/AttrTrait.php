@@ -2,12 +2,16 @@
 
 namespace CloudCastle\CryptoProPhpApi\Bin\BinOptions;
 
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\AddAttrOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\AddSignOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\SignOptions;
+
 trait AttrTrait
 {
     /**
      * @param string $oidAlg
      * @param string $file
-     * @return \CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\SignOptions|AttrTrait|\CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\AddAttrOptions|\CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\AddSignOptions
+     * @return SignOptions|AttrTrait|AddAttrOptions|AddSignOptions
      */
     final public function attr(string $oidAlg, string $file): self
     {

@@ -16,7 +16,7 @@ trait TraceTrait
     final public function trace(string $mode): self
     {
         $this->setOptions('-trace ' . $mode);
-       
+
         return $this;
     }
 }

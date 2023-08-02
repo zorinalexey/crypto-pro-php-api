@@ -12,7 +12,7 @@ trait NameTrait
         $this->setOptions('-name');
         $opt = new CertSearchOptions();
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 }

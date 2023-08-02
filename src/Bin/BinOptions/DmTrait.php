@@ -18,7 +18,7 @@ trait DmTrait
     final public function dm(): self
     {
         $this->setOptions('-dm');
-       
+
         return $this;
     }
 }

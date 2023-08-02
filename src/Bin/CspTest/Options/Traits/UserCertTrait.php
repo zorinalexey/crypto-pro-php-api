@@ -11,7 +11,7 @@ trait UserCertTrait
     {
         $opt = new StoreOptions('cert');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 }

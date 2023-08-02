@@ -22,7 +22,7 @@ trait PinTrait
     final public function pin(string $pin): self
     {
         $this->setOptions('-pin ' . $pin);
-       
+
         return $this;
     }
 }

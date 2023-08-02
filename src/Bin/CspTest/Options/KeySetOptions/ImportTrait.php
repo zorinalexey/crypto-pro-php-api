@@ -12,7 +12,7 @@ trait ImportTrait
     final public function import(string $file): self
     {
         $this->setOptions('-import "' . $file . '"');
-       
+
         return $this;
     }
 }

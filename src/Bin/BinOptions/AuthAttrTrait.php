@@ -14,7 +14,7 @@ trait AuthAttrTrait
     final public function authattr(): self
     {
         $this->setOptions('-authattr');
-       
+
         return $this;
     }
 }

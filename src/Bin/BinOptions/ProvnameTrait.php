@@ -23,7 +23,7 @@ trait ProvnameTrait
     final public function provname(string $name): self
     {
         $this->setOptions('-provname "' . $name . '"');
-       
+
         return $this;
     }
 }

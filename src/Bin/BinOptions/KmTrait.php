@@ -18,7 +18,7 @@ trait KmTrait
     final public function km(): self
     {
         $this->setOptions('-km');
-       
+
         return $this;
     }
 }

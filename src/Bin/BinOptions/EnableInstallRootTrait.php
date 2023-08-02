@@ -15,7 +15,7 @@ trait EnableInstallRootTrait
     final public function enableInstallRoot(): self
     {
         $this->setOptions('-enable-install-root');
-       
+
         return $this;
     }
 }

@@ -18,7 +18,7 @@ trait CadesBesTrait
     public function cadesbes(): self
     {
         $this->setOptions('-cadesbes');
-       
+
         return $this;
     }
 }

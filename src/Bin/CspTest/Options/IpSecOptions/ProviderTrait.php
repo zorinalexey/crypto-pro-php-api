@@ -20,7 +20,7 @@ trait ProviderTrait
     final public function provider(string $providerName): self
     {
         $this->setOptions('-provider "' . $providerName . '"');
-       
+
         return $this;
     }
 }

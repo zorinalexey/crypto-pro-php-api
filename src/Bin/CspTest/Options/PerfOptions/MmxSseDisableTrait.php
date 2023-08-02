@@ -13,7 +13,7 @@ trait MmxSseDisableTrait
     final public function mmxSseDisable(): self
     {
         $this->setOptions('-mmx-sse-disable');
-       
+
         return $this;
     }
 }

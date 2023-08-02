@@ -16,7 +16,7 @@ trait StampChainCheckTrait
     final public function stampchaincheck(): self
     {
         $this->setOptions('-stampchaincheck');
-       
+
         return $this;
     }
 }

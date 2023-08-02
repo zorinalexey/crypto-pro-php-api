@@ -12,7 +12,7 @@ trait AlgTrait
     final public function alg(string $alg): self
     {
         $this->setOptions('-alg ' . $alg);
-       
+
         return $this;
     }
 }

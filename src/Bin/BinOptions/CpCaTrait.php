@@ -18,7 +18,7 @@ trait CpCaTrait
     final public function cpCa(string $url): self
     {
         $this->setOptions('-cpca ' . $url);
-       
+
         return $this;
     }
 }

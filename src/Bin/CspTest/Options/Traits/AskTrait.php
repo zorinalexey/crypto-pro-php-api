@@ -11,7 +11,7 @@ trait AskTrait
     public function ask(): self
     {
         $this->setOptions('-ask');
-       
+
         return $this;
     }
 }

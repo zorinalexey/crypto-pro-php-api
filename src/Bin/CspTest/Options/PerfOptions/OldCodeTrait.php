@@ -13,7 +13,7 @@ trait OldCodeTrait
     final public function oldCode(): self
     {
         $this->setOptions('-oldcode');
-       
+
         return $this;
     }
 

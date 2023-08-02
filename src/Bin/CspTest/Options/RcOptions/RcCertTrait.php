@@ -12,7 +12,7 @@ trait RcCertTrait
     final public function certificate(string $certFilePath): self
     {
         $this->setOptions('-cert "' . $certFilePath . '"');
-       
+
         return $this;
     }
 }

@@ -16,7 +16,7 @@ trait SgTrait
     final public function sg(): self
     {
         $this->setOptions('-sg');
-       
+
         return $this;
     }
 }

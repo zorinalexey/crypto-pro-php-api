@@ -8,7 +8,7 @@ trait ReaderTrait
     final public function reader(string $reader): self
     {
         $this->setOptions('-reader ' . $reader);
-       
+
         return $this;
     }
 }

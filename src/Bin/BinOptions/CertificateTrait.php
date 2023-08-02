@@ -14,7 +14,7 @@ trait CertificateTrait
     final public function certificate(): self
     {
         $this->setOptions('-certificate');
-       
+
         return $this;
     }
 }

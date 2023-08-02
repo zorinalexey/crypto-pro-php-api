@@ -28,7 +28,7 @@ trait NoChainTrait
     final public function nochain(): self
     {
         $this->setOptions('-nochain');
-       
+
         return $this;
     }
 }

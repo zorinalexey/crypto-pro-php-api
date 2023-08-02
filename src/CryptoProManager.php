@@ -44,7 +44,7 @@ final class CryptoProManager
     public function user(string $userName): self
     {
         $this->user .= 'sudo -u ' . $userName;
-       
+
         return $this;
     }
 
@@ -63,7 +63,7 @@ final class CryptoProManager
     public function certMgr(): CertMgr
     {
         $this->command = $this->certmgr;
-       
+
         return $this->command;
     }
 
@@ -73,7 +73,7 @@ final class CryptoProManager
     public function cspTest(): CspTest
     {
         $this->command = $this->cspTest;
-       
+
         return $this->command;
     }
 
@@ -83,7 +83,7 @@ final class CryptoProManager
     public function cspTestF(): CspTestF
     {
         $this->command = $this->cspTestF;
-       
+
         return $this->command;
     }
 
@@ -94,7 +94,7 @@ final class CryptoProManager
     public function cryptCp(): CryptCp
     {
         $this->command = $this->cryptcp;
-       
+
         return $this->command;
     }
 
@@ -105,7 +105,7 @@ final class CryptoProManager
     public function cpConfig(): CpConfig
     {
         $this->command = $this->cpconfig;
-       
+
         return $this->command;
     }
 
@@ -120,24 +120,15 @@ final class CryptoProManager
         if ($this->user) {
             $command = $this->user . ' ' . $this->command;
         }
-        if(!$msg){
+        if (!$msg) {
             exec($command, $output, $code);
-        }else{
+        } else {
             extract($this->proc($command, $msg));
         }
         return compact('output', 'code', 'command');
     }
 
-    final public function __toString(): string
-    {
-        $command = $this->command;
-        if ($this->user) {
-            $command = $this->user . ' ' . $this->command;
-        }
-        return $command;
-    }
-
-    private function proc(string $command, string $msg):array
+    private function proc(string $command, string $msg): array
     {
         $pipes = false;
         $desc = [
@@ -154,5 +145,14 @@ final class CryptoProManager
             $code = proc_close($process);
         }
         return compact('output', 'code', 'command');
+    }
+
+    final public function __toString(): string
+    {
+        $command = $this->command;
+        if ($this->user) {
+            $command = $this->user . ' ' . $this->command;
+        }
+        return $command;
     }
 }

@@ -21,7 +21,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-make');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -33,7 +33,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-delete');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -45,7 +45,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-install');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -57,7 +57,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-cinstall');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -69,7 +69,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-setcert');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -81,7 +81,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-sign');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -93,7 +93,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-shadowthumbpint');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -105,7 +105,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-linkedthumbprint');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -118,7 +118,7 @@ final class PropertyOptions extends Options
         $opt = new PropertyCommandOptions();
         $this->setOptions('-pin ' . $password);
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 }

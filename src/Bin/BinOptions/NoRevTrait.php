@@ -28,7 +28,7 @@ trait NoRevTrait
     final public function norev(): self
     {
         $this->setOptions('-norev');
-       
+
         return $this;
     }
 }

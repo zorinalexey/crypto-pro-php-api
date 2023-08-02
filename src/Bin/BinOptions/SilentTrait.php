@@ -34,7 +34,7 @@ trait SilentTrait
     final public function silent(): self
     {
         $this->setOptions('-silent');
-       
+
         return $this;
     }
 }

@@ -27,7 +27,7 @@ final class CpConfig extends Bin
         $this->setCommand('-license');
         $opt = new LicenseOptions();
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -40,7 +40,7 @@ final class CpConfig extends Bin
         $this->setCommand('-hardware');
         $opt = new HardWareOptions();
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -53,7 +53,7 @@ final class CpConfig extends Bin
         $this->setCommand('-defprov');
         $opt = new DefProvOptions();
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 }

@@ -12,7 +12,7 @@ trait NTrait
     final public function n(string $n): self
     {
         $this->setOptions('-n ' . $n);
-       
+
         return $this;
     }
 }

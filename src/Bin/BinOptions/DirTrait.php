@@ -18,7 +18,7 @@ trait DirTrait
     final public function dir(string $path): self
     {
         $this->setOptions('-dir "' . $path . '"');
-       
+
         return $this;
     }
 }

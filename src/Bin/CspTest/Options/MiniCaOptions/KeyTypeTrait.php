@@ -12,7 +12,7 @@ trait KeyTypeTrait
     final public function keyType(string $keyType = 'both'): self
     {
         $this->setOptions('-keytype ' . $keyType);
-       
+
         return $this;
     }
 }

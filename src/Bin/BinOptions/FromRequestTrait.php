@@ -2,10 +2,12 @@
 
 namespace CloudCastle\CryptoProPhpApi\Bin\BinOptions;
 
+use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\InstCertOptions;
+
 trait FromRequestTrait
 {
     /**
-     * @return \CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\InstCertOptions|FromRequestTrait
+     * @return InstCertOptions|FromRequestTrait
      */
     final public function fromRequest(): self
     {

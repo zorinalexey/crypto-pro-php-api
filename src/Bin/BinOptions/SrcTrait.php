@@ -15,7 +15,7 @@ trait SrcTrait
     final public function src(string $path): self
     {
         $this->setOptions("-src '" . $path . "'");
-       
+
         return $this;
     }
 }

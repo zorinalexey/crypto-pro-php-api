@@ -15,7 +15,7 @@ trait AddChainTrait
     final public function addChain(): self
     {
         $this->setOptions('-addchain');
-       
+
         return $this;
     }
 }

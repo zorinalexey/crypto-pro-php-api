@@ -17,7 +17,7 @@ trait TftmTrait
     final public function tfmt(string $flag): self
     {
         $this->setOptions('-tfmt ' . $flag);
-       
+
         return $this;
     }
 

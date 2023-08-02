@@ -38,7 +38,7 @@ trait DnTrait
     {
         $searchString = $dnKey . '="' . $dnValue . '"';
         $this->setOptions($searchString, '-dn', ', ');
-       
+
         return $this;
     }
 }

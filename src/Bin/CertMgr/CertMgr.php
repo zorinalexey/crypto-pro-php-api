@@ -22,7 +22,7 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-list');
         $this->setOptions(new Options());
-       
+
         return $this->getOptions();
     }
 
@@ -35,7 +35,7 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-install');
         $this->setOptions(new Options());
-       
+
         return $this->getOptions();
     }
 
@@ -47,7 +47,7 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-decode');
         $this->setOptions(new Options());
-       
+
         return $this->getOptions();
     }
 
@@ -59,7 +59,7 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-export');
         $this->setOptions(new Options());
-       
+
         return $this->getOptions();
     }
 
@@ -71,7 +71,7 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-delete');
         $this->setOptions(new Options());
-       
+
         return $this->getOptions();
     }
 
@@ -83,7 +83,7 @@ final class CertMgr extends Bin
     {
         $this->setCommand('-enumstores');
         $this->setOptions(new Options());
-       
+
         return $this->getOptions();
     }
 

@@ -12,7 +12,7 @@ trait CNumberTrait
     final public function cNumber(int $certNumber): self
     {
         $this->setOptions('-cnumber ' . $certNumber);
-       
+
         return $this;
     }
 }

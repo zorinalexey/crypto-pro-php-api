@@ -26,7 +26,7 @@ trait CertTrait
             $cert = 'nocert';
         }
         $this->setOptions('-' . $cert);
-       
+
         return $this;
     }
 }

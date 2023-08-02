@@ -15,7 +15,7 @@ trait CertUsageTrait
     final public function certUsage(string $usage): self
     {
         $this->setOptions($usage, '-certusage', ',');
-       
+
         return $this;
     }
 }

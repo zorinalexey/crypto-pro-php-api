@@ -9,6 +9,4 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SpeedOptions\TypeTrait;
 final class SpeedOptions extends Options
 {
     use GlobalOptionsTrait, TypeTrait;
-
-
 }

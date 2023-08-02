@@ -17,7 +17,7 @@ trait RdnTrait
     {
         $option = $fieldName . '="' . $fieldValue . '"';
         $this->setOptions($option, 'rdn', ', ');
-       
+
         return $this;
     }
 }

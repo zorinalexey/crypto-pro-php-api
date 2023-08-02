@@ -12,7 +12,7 @@ trait FromTrait
     final public function from(int $days): self
     {
         $this->setOptions('-from ' . $days);
-       
+
         return $this;
     }
 }

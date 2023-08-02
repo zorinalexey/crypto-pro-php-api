@@ -18,21 +18,21 @@ final class IssuerOptions extends Options
         $this->setOptions('-issuer');
         $opt = new CertSearchOptions();
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
     public function password(string $password): self
     {
         $this->setOptions('-ipassword ' . $password);
-       
+
         return $this;
     }
 
     public function alg(string $oidAlg): self
     {
         $this->setOptions('-ialg ' . $oidAlg);
-       
+
         return $this;
     }
 
@@ -56,7 +56,7 @@ final class IssuerOptions extends Options
             $store = $typeStore . 'My';
         }
         $this->setOptions('-istore ' . $store);
-       
+
         return $this;
     }
 }

@@ -14,7 +14,7 @@ trait BothTrait
     final public function both(): self
     {
         $this->setOptions('-both');
-       
+
         return $this;
     }
 }

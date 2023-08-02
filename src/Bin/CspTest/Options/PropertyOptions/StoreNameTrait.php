@@ -12,7 +12,7 @@ trait StoreNameTrait
     final public function storeName(string $fileName): self
     {
         $this->setOptions('-storename "' . $fileName . '"');
-       
+
         return $this;
     }
 }

@@ -11,7 +11,7 @@ trait MachineKeySetTrait
     final public function machineKeySet(): self
     {
         $this->setOptions('-machinekeyset');
-       
+
         return $this;
     }
 }

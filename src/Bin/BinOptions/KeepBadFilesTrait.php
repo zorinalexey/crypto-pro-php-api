@@ -18,7 +18,7 @@ trait KeepBadFilesTrait
     final public function keepbadfiles(): self
     {
         $this->setOptions('-keepbadfiles');
-       
+
         return $this;
     }
 }

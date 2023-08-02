@@ -15,7 +15,7 @@ trait KeySizeTrait
     final public function keySize(int $size): self
     {
         $this->setOptions('-keysize ' . $size);
-       
+
         return $this;
     }
 }

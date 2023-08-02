@@ -13,7 +13,7 @@ trait MachineDestTrait
     final public function machineDest(): self
     {
         $this->setOptions('-machinedest');
-       
+
         return $this;
     }
 }

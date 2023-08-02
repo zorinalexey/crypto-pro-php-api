@@ -11,7 +11,7 @@ trait AutoProvTrait
     final public function autoprov(): self
     {
         $this->setOptions('-autoprov');
-       
+
         return $this;
     }
 }

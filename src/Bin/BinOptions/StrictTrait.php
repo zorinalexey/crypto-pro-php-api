@@ -16,7 +16,7 @@ trait StrictTrait
     final public function strict(): self
     {
         $this->setOptions('-strict ');
-       
+
         return $this;
     }
 }

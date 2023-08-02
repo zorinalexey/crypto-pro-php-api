@@ -21,7 +21,7 @@ final class AbsorbOptions extends Options
         $opt = new AbsorbParamsOptions();
         $this->setOptions('-roots');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 
@@ -33,7 +33,7 @@ final class AbsorbOptions extends Options
         $opt = new AbsorbParamsOptions();
         $this->setOptions('-certs');
         $this->setOptions($opt);
-       
+
         return $opt;
     }
 }

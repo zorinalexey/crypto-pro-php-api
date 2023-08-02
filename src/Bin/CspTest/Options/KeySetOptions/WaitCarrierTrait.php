@@ -12,7 +12,7 @@ trait WaitCarrierTrait
     final public function waitCarrier(int $seconds): self
     {
         $this->setOptions('-waitcarrier ' . $seconds);
-       
+
         return $this;
     }
 }

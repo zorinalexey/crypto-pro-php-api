@@ -15,7 +15,7 @@ trait RequestLicTrait
     final public function requestLic(): self
     {
         $this->setOptions('-requestlic');
-       
+
         return $this;
     }
 }

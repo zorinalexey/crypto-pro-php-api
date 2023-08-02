@@ -22,7 +22,7 @@ trait HashAlgTrait
     final public function hashAlg(string $alg): self
     {
         $this->setOptions("-hashalg " . $alg);
-       
+
         return $this;
     }
 }

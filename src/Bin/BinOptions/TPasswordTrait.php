@@ -16,7 +16,7 @@ trait TPasswordTrait
     final public function password(string $password): self
     {
         $this->setOptions('-tpassword ' . $password);
-       
+
         return $this;
     }
 }

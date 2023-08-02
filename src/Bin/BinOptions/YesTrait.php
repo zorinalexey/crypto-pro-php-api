@@ -14,7 +14,7 @@ trait YesTrait
     final public function yes(): self
     {
         $this->setOptions('-yes');
-       
+
         return $this;
     }
 }

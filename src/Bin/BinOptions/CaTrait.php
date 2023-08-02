@@ -17,7 +17,7 @@ trait CaTrait
     final public function ca(string $url): self
     {
         $this->setOptions('-ca ' . $url);
-       
+
         return $this;
     }
 }

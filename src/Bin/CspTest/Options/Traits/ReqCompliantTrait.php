@@ -11,7 +11,7 @@ trait ReqCompliantTrait
     final public function reqCompliant(): static
     {
         $this->setOptions('-req_compliant');
-       
+
         return $this;
     }
 }

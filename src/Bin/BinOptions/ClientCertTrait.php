@@ -16,7 +16,7 @@ trait ClientCertTrait
     final public function clientCert(): self
     {
         $this->setOptions('-clientcert');
-       
+
         return $this;
     }
 }

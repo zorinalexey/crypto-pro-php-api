@@ -29,7 +29,7 @@ trait AllTrait
     final public function all(): self
     {
         $this->setOptions('-all');
-       
+
         return $this;
     }
 }

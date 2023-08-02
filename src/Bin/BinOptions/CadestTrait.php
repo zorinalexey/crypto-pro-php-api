@@ -18,7 +18,7 @@ trait CadestTrait
     public function cadest(): self
     {
         $this->setOptions('-cadest');
-       
+
         return $this;
     }
 }

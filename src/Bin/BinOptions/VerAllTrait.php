@@ -13,7 +13,7 @@ trait VerAllTrait
     final public function verAll(): self
     {
         $this->setOptions('-verall ');
-       
+
         return $this;
     }
 }

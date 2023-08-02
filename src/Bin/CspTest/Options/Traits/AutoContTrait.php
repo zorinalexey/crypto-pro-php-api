@@ -11,7 +11,7 @@ trait AutoContTrait
     final public function autoCont(): self
     {
         $this->setOptions('-autocont');
-       
+
         return $this;
     }
 }

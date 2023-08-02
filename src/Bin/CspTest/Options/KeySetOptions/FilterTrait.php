@@ -12,7 +12,7 @@ trait FilterTrait
     final public function filter(string $filter): self
     {
         $this->setOptions('-filter ' . $filter);
-       
+
         return $this;
     }
 }
