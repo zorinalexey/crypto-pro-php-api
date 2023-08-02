@@ -22,7 +22,7 @@ final class CryptoProManager
     private Bin|null $command = null;
 
     private string|null $user = null;
-    private Curl $curl;
+    private Curl|null $curl = null;
 
     public function __construct()
     {
@@ -155,5 +155,12 @@ final class CryptoProManager
             $command = $this->user . ' ' . $this->command;
         }
         return $command;
+    }
+
+    public function curl(): Curl
+    {
+        $this->command = $this->curl;
+
+        return $this->command;
     }
 }
