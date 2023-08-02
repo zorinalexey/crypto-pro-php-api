@@ -8,6 +8,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CpConfig\CpConfig;
 use CloudCastle\CryptoProPhpApi\Bin\CryptCp\CryptCp;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\CspTest;
 use CloudCastle\CryptoProPhpApi\Bin\CspTestF\CspTestF;
+use CloudCastle\CryptoProPhpApi\Bin\Curl\Curl;
 
 final class CryptoProManager
 {
