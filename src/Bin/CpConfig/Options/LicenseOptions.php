@@ -17,7 +17,7 @@ final class LicenseOptions extends Options
         $license = preg_replace(
             [
                 '~(\W+)~iu',
-                '^(\w{5})(\w{5})(\w{5})(\w{5})(\w{5})$'],
+                '~^(\w{5})(\w{5})(\w{5})(\w{5})(\w{5})$~'],
             [
                 '',
                 '$1-$2-$3-$4-$5'
@@ -25,6 +25,16 @@ final class LicenseOptions extends Options
             mb_strtoupper(trim($license))
         );
         $this->setOptions('-setlocal ' . $license);
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function view(): self
+    {
+        $this->setOptions('-view ');
 
         return $this;
     }

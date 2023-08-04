@@ -21,7 +21,7 @@ class Options extends \CloudCastle\CryptoProPhpApi\Abstracts\Options
 
     public function sendFile(string $file): self
     {
-        $this->setOptions("--data-binary @'" . $file . "'");
+        $this->setOptions("--data-binary @'" . $file ."'");
 
         return $this;
     }
