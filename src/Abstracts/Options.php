@@ -47,9 +47,9 @@ abstract class Options
         return false;
     }
 
-    final public function setOption(string $paramName, string $paramValue): static
+    final public function setOption(string $param): static
     {
-        $this->setOptions($paramName, $paramValue);
+        $this->setOptions($param);
 
         return $this;
     }
