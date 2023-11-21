@@ -11,8 +11,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CpConfig\Options\Traits\ViewTrait;
 
 final class RndmOptions extends Options
 {
-
-    use ViewTrait, AddTrait, LevelTrait, NameTrait, StringTrait;
+    use AddTrait, LevelTrait, NameTrait, StringTrait, ViewTrait;
 
     public function __construct()
     {

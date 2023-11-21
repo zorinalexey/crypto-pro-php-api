@@ -10,14 +10,12 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfEncOptions\SfEncOptions;
 
 trait OutputFileTrait
 {
-
     /**
-     * @param string $filePath
      * @return SignOptions|HashOptions|KeySetOptions|EncryptOptions|SfEncOptions|\CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions\SignOptions|OutputFileTrait
      */
     final public function outputFile(string $filePath): self
     {
-        $this->setOptions('-out "' . $filePath . '"');
+        $this->setOptions('-out "'.$filePath.'"');
 
         return $this;
     }

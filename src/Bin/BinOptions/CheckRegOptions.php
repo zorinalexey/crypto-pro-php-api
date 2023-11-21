@@ -6,5 +6,5 @@ use CloudCastle\CryptoProPhpApi\Abstracts\Options;
 
 class CheckRegOptions extends Options
 {
-    use CpCaTrait, CpCa20Trait, TokenTrait, TPasswordTrait;
+    use CpCa20Trait, CpCaTrait, TokenTrait, TPasswordTrait;
 }

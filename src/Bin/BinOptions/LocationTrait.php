@@ -12,7 +12,7 @@ trait LocationTrait
      * user — показать хранилища Текущего пользователя (по умолчанию).
      * machine — показать хранилища Локального компьютера.
      * all_locations — показать все хранилища.
-     * @param string $type
+     *
      * @return LocationTrait|Options
      */
     final public function location(string $type): self
@@ -22,10 +22,10 @@ trait LocationTrait
             'machine',
             'all_locations',
         ];
-        if (!in_array(mb_strtolower($type), $types)) {
+        if (! in_array(mb_strtolower($type), $types)) {
             $type = 'user';
         }
-        $this->setOptions('-location ' . $type);
+        $this->setOptions('-location '.$type);
 
         return $this;
     }

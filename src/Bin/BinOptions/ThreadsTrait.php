@@ -11,13 +11,13 @@ trait ThreadsTrait
 {
     /**
      * Число параллельно работающих потоков (по умолчанию 1)
-     * @param int|null $threads
+     *
      * @return SignfOptions|ThreadsTrait|AddSignfOptions|VSignOptions|KeySetOptions
      */
-    final public function threads(int|null $threads = null): self
+    final public function threads(int $threads = null): self
     {
         $threads ??= 1;
-        $this->setOptions('-threads ' . $threads);
+        $this->setOptions('-threads '.$threads);
 
         return $this;
     }

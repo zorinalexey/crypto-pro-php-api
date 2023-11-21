@@ -23,16 +23,16 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PerfOptions;
 
 trait ProvtypeTrait
 {
-
     /**
      * Тип провайдера (значение по умолчанию 75).
-     * @param int|null $type Тип провайдера (значение по умолчанию 75).
+     *
+     * @param  int|null  $type Тип провайдера (значение по умолчанию 75).
      * @return CreateRequestOptions|ProvtypeTrait|Options|SetDefOptions|DefProvOptions|CreateCertOptions|CspCertOptions|HashOptions|InstCertOptions|PendCertOptions|AbsorbParamsOptions|CertKeyOptions|DefProviderOptions|EnumOptions|\CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\HashOptions|KeySetOptions|Certificate|OidOptions|PasswordOptions|PerfOptions
      */
-    final public function provtype(int|null $type = null): self
+    final public function provtype(int $type = null): self
     {
         $type ??= 75;
-        $this->setOptions('-provtype ' . $type);
+        $this->setOptions('-provtype '.$type);
 
         return $this;
     }

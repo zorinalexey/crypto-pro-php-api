@@ -23,6 +23,7 @@ trait ErrChainTrait
 {
     /**
      * Завершать выполнение с ошибкой, если хотя бы один сертификат не прошел проверку
+     *
      * @return AddAttrOptions|ErrChainTrait|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|ListTmplOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|StoreOptions
      */
     final public function errchain(): self

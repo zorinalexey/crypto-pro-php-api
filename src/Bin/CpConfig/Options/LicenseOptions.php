@@ -6,10 +6,9 @@ use CloudCastle\CryptoProPhpApi\Abstracts\Options;
 
 final class LicenseOptions extends Options
 {
-
     /**
      * Установка лицензии
-     * @param string $license
+     *
      * @return $this
      */
     public function set(string $license): self
@@ -20,11 +19,11 @@ final class LicenseOptions extends Options
                 '~^(\w{5})(\w{5})(\w{5})(\w{5})(\w{5})$~'],
             [
                 '',
-                '$1-$2-$3-$4-$5'
+                '$1-$2-$3-$4-$5',
             ],
             mb_strtoupper(trim($license))
         );
-        $this->setOptions('-setlocal ' . $license);
+        $this->setOptions('-setlocal '.$license);
 
         return $this;
     }

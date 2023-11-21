@@ -14,6 +14,6 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\XLongType1Trait;
 
 final class VSignOptions extends Options
 {
-    use SignTypeTrait, DirTrait, XLongType1Trait, CadestTrait, CadesBesTrait;
-    use NoCadesTrait, KpsOptions, FextTrait, ThreadsTrait;
+    use CadesBesTrait, CadestTrait, DirTrait, SignTypeTrait, XLongType1Trait;
+    use FextTrait, KpsOptions, NoCadesTrait, ThreadsTrait;
 }

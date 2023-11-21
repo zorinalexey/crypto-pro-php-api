@@ -10,9 +10,6 @@ final class LowSignOption extends Options
 {
     use GlobalOptionsTrait;
 
-    /**
-     * @return SignOptions
-     */
     public function sign(): SignOptions
     {
         $opt = new SignOptions();
@@ -22,9 +19,6 @@ final class LowSignOption extends Options
         return $opt;
     }
 
-    /**
-     * @return SignOptions
-     */
     public function addSign(): SignOptions
     {
         $opt = new SignOptions();
@@ -34,9 +28,6 @@ final class LowSignOption extends Options
         return $opt;
     }
 
-    /**
-     * @return SignOptions
-     */
     public function verify(): SignOptions
     {
         $opt = new SignOptions();

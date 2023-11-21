@@ -11,12 +11,11 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PerfOptions;
 trait CpLevelTrait
 {
     /**
-     * @param int $level
      * @return PerfOptions|EnumOptions|KeySetOptions|OidOptions|CpLevelTrait|PasswordOptions
      */
     final public function cpLevel(int $level): self
     {
-        $this->setOptions('--cplevel ' . $level);
+        $this->setOptions('--cplevel '.$level);
 
         return $this;
     }

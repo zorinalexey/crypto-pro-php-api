@@ -25,7 +25,7 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\SMimeTrait;
 
 class CreateRequestOptions extends Options
 {
-    use RdnTrait, ProvtypeTrait, ProvnameTrait, SMimeTrait, NoKeygenTrait, ExportTrait, KeySizeTrait, HashAlgTrait;
-    use ExTrait, SgTrait, KuTrait, KmTrait, ContTrait, SilentTrait, PinTrait, CertUsageTrait, RequestLicTrait, DerTrait;
+    use CertUsageTrait, ContTrait, DerTrait, ExTrait, KmTrait, KuTrait, PinTrait, RequestLicTrait, SgTrait, SilentTrait;
+    use ExportTrait, HashAlgTrait, KeySizeTrait, NoKeygenTrait, ProvnameTrait, ProvtypeTrait, RdnTrait, SMimeTrait;
     use ExtTrait;
 }

@@ -5,6 +5,7 @@ namespace CloudCastle\CryptoProPhpApi\Abstracts;
 abstract class AbstractParser
 {
     protected const DELIMITER = ' >>> ';
+
     protected static array $parseData = [
         'Издатель' => 'setIssuer',
         'Субъект' => 'setSubject',
@@ -25,9 +26,10 @@ abstract class AbstractParser
         'URL списка отзыва' => 'setListCrlUrl',
         'Тип провайдера' => 'setProviderType',
         'тип ключа' => 'setKeyType',
-        'флаги' => 'setFlags'
+        'флаги' => 'setFlags',
     ];
+
     protected static array $eku = [
-        'Назначение/EKU'
+        'Назначение/EKU',
     ];
 }

@@ -16,12 +16,13 @@ trait PinTrait
 {
     /**
      * Пин-код контейнера.
-     * @param string $pin Пин-код контейнера.
+     *
+     * @param  string  $pin Пин-код контейнера.
      * @return SignOptions|PinTrait|Options|AddSignfOptions|AddSignOptions|CreateCertOptions|CreateRequestOptions|DecryptOptions|InstCertOptions|SignfOptions
      */
     final public function pin(string $pin): self
     {
-        $this->setOptions('-pin ' . $pin);
+        $this->setOptions('-pin '.$pin);
 
         return $this;
     }

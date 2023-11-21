@@ -9,6 +9,7 @@ trait NoKeygenTrait
 {
     /**
      * Использовать существующие ключи из указанного контейнера -cont (если контейнер не указан, выбор из списка)
+     *
      * @return CreateRequestOptions|NoKeygenTrait|CreateCertOptions
      */
     final public function noKeygen(): self

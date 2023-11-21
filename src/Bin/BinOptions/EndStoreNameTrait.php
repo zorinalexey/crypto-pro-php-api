@@ -9,7 +9,7 @@ trait EndStoreNameTrait
 {
     /**
      * Название конечного хранилища (по умолчанию "My")
-     * @param string $store
+     *
      * @return CopyCertOptions|EndStoreNameTrait|CspCertOptions
      */
     final public function storeName(string $store): self
@@ -20,9 +20,9 @@ trait EndStoreNameTrait
             'Root',
             'CA',
             'Cache',
-            'AddressBook'
+            'AddressBook',
         ];
-        if (!in_array($store, $stores)) {
+        if (! in_array($store, $stores)) {
             $store = 'My';
         }
         $this->setOptions($store);

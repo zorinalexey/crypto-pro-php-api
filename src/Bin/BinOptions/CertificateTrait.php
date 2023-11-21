@@ -6,9 +6,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CertMgr\Options;
 
 trait CertificateTrait
 {
-
     /**
      * Работать с сертификатом
+     *
      * @return CertificateTrait|Options
      */
     final public function certificate(): self

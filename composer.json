@@ -16,6 +16,8 @@
     ],
     "require": {
         "php": "^8.1",
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "free2one/php-accessor": "~0.4",
+        "laravel/pint": "^1.13"
     }
 }

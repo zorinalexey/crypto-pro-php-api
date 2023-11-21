@@ -9,11 +9,10 @@ use CloudCastle\CryptoProPhpApi\Bin\CpConfig\Options\Traits\ViewTrait;
 
 final class DefProvOptions extends Options
 {
-    use ViewTrait, ProvtypeTrait;
+    use ProvtypeTrait, ViewTrait;
 
     /**
      * Установка провайдера по умолчанию для нужного типа
-     * @return SetDefOptions
      */
     public function setDefault(): SetDefOptions
     {
@@ -25,8 +24,6 @@ final class DefProvOptions extends Options
 
     /**
      * Получение имени провайдера по умолчанию для нужного типа
-     * @param int $provType
-     * @return void
      */
     public function getDefault(int $provType): void
     {
@@ -37,7 +34,6 @@ final class DefProvOptions extends Options
 
     /**
      * Просмотр типов доступных криптопровайдеров
-     * @return void
      */
     public function viewType(): void
     {

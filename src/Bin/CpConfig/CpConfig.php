@@ -9,8 +9,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CpConfig\Options\LicenseOptions;
 
 final class CpConfig extends Bin
 {
-
-    private static string $bin = self::APP_SBIN_PATH . DIRECTORY_SEPARATOR . 'cpconfig' . self::APP_EXT;
+    private static string $bin = self::APP_SBIN_PATH.DIRECTORY_SEPARATOR.'cpconfig'.self::APP_EXT;
 
     public function __construct()
     {
@@ -20,7 +19,6 @@ final class CpConfig extends Bin
     /**
      * Работа с лицензией
      * Без дополнительных опций вернет текущее значение лицензии
-     * @return LicenseOptions
      */
     public function license(): LicenseOptions
     {
@@ -33,7 +31,6 @@ final class CpConfig extends Bin
 
     /**
      * Настройка оборудования СКЗИ
-     * @return HardWareOptions
      */
     public function hardware(): HardWareOptions
     {
@@ -46,7 +43,6 @@ final class CpConfig extends Bin
 
     /**
      * Настройка крипто-провайдера по умолчанию
-     * @return DefProvOptions
      */
     public function defProv(): DefProvOptions
     {

@@ -7,6 +7,7 @@ trait AddTrait
     /**
      * Добавления консольного БиоДСЧ
      * Просмотра списка
+     *
      * @return $this
      */
     final public function add(): self

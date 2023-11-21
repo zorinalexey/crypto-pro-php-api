@@ -9,6 +9,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 
 class RcStoreOption extends Options
 {
-    use DnTrait, ThumbprintTrait, RcIssuerTrait;
+    use DnTrait, RcIssuerTrait, ThumbprintTrait;
     use GlobalOptionsTrait;
 }

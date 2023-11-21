@@ -22,6 +22,6 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\TPasswordTrait;
 
 class PendCertOptions extends Options
 {
-    use ProvtypeTrait, ProvnameTrait, ContTrait, KuTrait, KmTrait, CaTrait, CpCaTrait, CpCa20Trait, DmTrait, DuTrait;
-    use FiLeidTrait, RequestIdTrait, TokenTrait, TPasswordTrait, ClientCertTrait, KpsOptions, NoCspTrait;
+    use CaTrait, ContTrait, CpCa20Trait, CpCaTrait, DmTrait, DuTrait, KmTrait, KuTrait, ProvnameTrait, ProvtypeTrait;
+    use ClientCertTrait, FiLeidTrait, KpsOptions, NoCspTrait, RequestIdTrait, TokenTrait, TPasswordTrait;
 }

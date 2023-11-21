@@ -7,7 +7,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\EnumOptions\EnumOptions;
 
 trait MachineTrait
 {
-
     /**
      * @return MachineTrait|AbsorbParamsOptions|EnumOptions|PropertyCommandOptions
      */

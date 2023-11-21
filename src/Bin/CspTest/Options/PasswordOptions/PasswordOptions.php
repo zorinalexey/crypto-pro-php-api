@@ -15,9 +15,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\OidOptions\CpLevelTrait;
 
 final class PasswordOptions extends Options
 {
-    use ProviderTrait, ProvtypeTrait, CpLevelTrait, CpDllTrait, ContainerTrait, DefaultOptionalTrait, RewritableTrait;
-    use KeyTypeTrait, PasswdTrait, AdminPasswdTrait, PukTrait, ChangeTypeTrait, ResetTriesTrait, ResetAdminTrait;
-    use NTrait, KTrait, NkNoNameTrait, NkNoNameChangeTrait, KPartTrait, SharedReaderTrait, PartReaderTrait, LengthTrait;
-    use SilentTrait;
+    use AdminPasswdTrait, ChangeTypeTrait, KeyTypeTrait, PasswdTrait, PukTrait, ResetAdminTrait, ResetTriesTrait;
+    use ContainerTrait, CpDllTrait, CpLevelTrait, DefaultOptionalTrait, ProviderTrait, ProvtypeTrait, RewritableTrait;
     use GlobalOptionsTrait;
+    use KPartTrait, KTrait, LengthTrait, NkNoNameChangeTrait, NkNoNameTrait, NTrait, PartReaderTrait, SharedReaderTrait;
+    use SilentTrait;
 }

@@ -15,10 +15,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\PasswordTrait;
 
 final class OidOptions extends Options
 {
-    use ProvtypeTrait, ProviderTrait, AlgTrait, ContainerTrait, PasswordTrait, SilentTrait;
-    use CpLevelTrait, CpDllTrait;
+    use AlgTrait, ContainerTrait, PasswordTrait, ProviderTrait, ProvtypeTrait, SilentTrait;
+    use CpDllTrait, CpLevelTrait;
     use GlobalOptionsTrait;
-
 
     /**
      * @return $this
@@ -49,6 +48,4 @@ final class OidOptions extends Options
 
         return $this;
     }
-
-
 }

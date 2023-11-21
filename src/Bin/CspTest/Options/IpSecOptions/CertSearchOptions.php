@@ -10,6 +10,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 
 class CertSearchOptions extends Options
 {
-    use DnTrait, ThumbprintTrait, SilentTrait;
+    use DnTrait, SilentTrait, ThumbprintTrait;
     use GlobalOptionsTrait;
 }

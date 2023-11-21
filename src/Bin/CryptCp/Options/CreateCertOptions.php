@@ -38,8 +38,8 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\TPasswordTrait;
 
 class CreateCertOptions extends Options
 {
-    use RdnTrait, ProvtypeTrait, ProvnameTrait, ContTrait, NoKeygenTrait, ExportTrait, KeySizeTrait, ExTrait, SgTrait;
-    use BothTrait, KuTrait, KmTrait, HashAlgTrait, CertUsageTrait, CpCaTrait, CpCa20Trait, SMimeTrait, RequestLicTrait;
-    use TokenTrait, TPasswordTrait, ClientCertTrait, KpsOptions, CaTrait, TmplTrait, DmTrait, DuTrait, NoCspTrait;
-    use SilentTrait, PinTrait, FiLeidTrait, ExtTrait, EnableInstallRootTrait, FileTrait;
+    use BothTrait, CertUsageTrait, CpCa20Trait, CpCaTrait, HashAlgTrait, KmTrait, KuTrait, RequestLicTrait, SMimeTrait;
+    use CaTrait, ClientCertTrait, DmTrait, DuTrait, KpsOptions, NoCspTrait, TmplTrait, TokenTrait, TPasswordTrait;
+    use ContTrait, ExportTrait, ExTrait, KeySizeTrait, NoKeygenTrait, ProvnameTrait, ProvtypeTrait, RdnTrait, SgTrait;
+    use EnableInstallRootTrait, ExtTrait, FiLeidTrait, FileTrait, PinTrait, SilentTrait;
 }

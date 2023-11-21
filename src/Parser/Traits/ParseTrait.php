@@ -4,7 +4,6 @@ namespace CloudCastle\CryptoProPhpApi\Parser\Traits;
 
 trait ParseTrait
 {
-
     private function parse(array $certInfo)
     {
         foreach ($certInfo as $str) {
@@ -19,5 +18,4 @@ trait ParseTrait
             }
         }
     }
-
 }

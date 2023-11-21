@@ -6,7 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PerfOptions;
 
 trait OldCodeTrait
 {
-
     /**
      * @return OldCodeTrait|PerfOptions
      */
@@ -16,5 +15,4 @@ trait OldCodeTrait
 
         return $this;
     }
-
 }

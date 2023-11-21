@@ -8,6 +8,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 
 final class MiniCaCrlOptions extends Options
 {
-    use FromTrait, UntilTrait, CNumberTrait, StoreTrait, IssuerTrait, SilentTrait;
+    use CNumberTrait, FromTrait, IssuerTrait, SilentTrait, StoreTrait, UntilTrait;
     use GlobalOptionsTrait;
 }

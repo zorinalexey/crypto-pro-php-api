@@ -6,7 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PerfOptions;
 
 trait MmxSseDisableTrait
 {
-
     /**
      * @return PerfOptions|MmxSseDisableTrait
      */

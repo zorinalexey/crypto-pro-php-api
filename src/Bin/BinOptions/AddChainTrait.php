@@ -7,9 +7,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\SignOptions;
 
 trait AddChainTrait
 {
-
     /**
      * Добавить полную цепочку сертификата в подпись
+     *
      * @return AddChainTrait|SignfOptions|SignOptions
      */
     final public function addChain(): self

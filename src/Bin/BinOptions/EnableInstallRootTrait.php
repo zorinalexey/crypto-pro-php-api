@@ -10,6 +10,7 @@ trait EnableInstallRootTrait
     /**
      * Не запрашивать разрешение на установку корневого сертификата в хранилище "Доверенные корневые центры"
      * только на UNIX с -dm
+     *
      * @return InstCertOptions|EnableInstallRootTrait|CreateCertOptions
      */
     final public function enableInstallRoot(): self

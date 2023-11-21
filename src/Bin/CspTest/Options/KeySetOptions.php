@@ -8,13 +8,8 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\KeySetOptions\KeySetOptions 
 
 final class KeySetOptions extends Options
 {
-
     use GlobalOptionsTrait;
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function newKeySet(): KeySetOpt
     {
         $this->setOptions('-newkeyset');
@@ -24,10 +19,6 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function addKeyPair(): KeySetOpt
     {
         $this->setOptions('-addkeypair');
@@ -37,10 +28,6 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function deleteKeySet(): KeySetOpt
     {
         $this->setOptions('-deletekeyset');
@@ -50,10 +37,6 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function info(): KeySetOpt
     {
         $this->setOptions('-info');
@@ -63,88 +46,60 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     * @param int|null $mask
-     * @return KeySetOpt
-     */
-    public function check(int|null $mask = null): KeySetOpt
+    public function check(int $mask = null): KeySetOpt
     {
-        $this->setOptions('--check ' . $mask);
+        $this->setOptions('--check '.$mask);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string|null $alg
-     * @return KeySetOpt
-     */
-    public function hash(string|null $alg = null): KeySetOpt
+    public function hash(string $alg = null): KeySetOpt
     {
-        $this->setOptions('-hash ' . $alg);
+        $this->setOptions('-hash '.$alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string|null $alg
-     * @return KeySetOpt
-     */
-    public function algId(string|null $alg = null): KeySetOpt
+    public function algId(string $alg = null): KeySetOpt
     {
-        $this->setOptions('-algid ' . $alg);
+        $this->setOptions('-algid '.$alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string|null $alg
-     * @return KeySetOpt
-     */
-    public function sign(string|null $alg = null): KeySetOpt
+    public function sign(string $alg = null): KeySetOpt
     {
-        $this->setOptions('-sign ' . $alg);
+        $this->setOptions('-sign '.$alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string|null $alg
-     * @return KeySetOpt
-     */
-    public function verify(string|null $alg = null): KeySetOpt
+    public function verify(string $alg = null): KeySetOpt
     {
-        $this->setOptions('-verify ' . $alg);
+        $this->setOptions('-verify '.$alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string|null $alg
-     * @return KeySetOpt
-     */
-    public function pkVerify(string|null $alg = null): KeySetOpt
+    public function pkVerify(string $alg = null): KeySetOpt
     {
-        $this->setOptions('-pkverify ' . $alg);
+        $this->setOptions('-pkverify '.$alg);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function enumContainers(): KeySetOpt
     {
         $this->setOptions('-enum_containers');
@@ -154,10 +109,6 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function crc(): KeySetOpt
     {
         $this->setOptions('-crc');
@@ -167,10 +118,6 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function encryptionCarrier(): KeySetOpt
     {
         $this->setOptions('-encryptioncarrier');
@@ -180,50 +127,33 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-
-    /**
-     * @param string $file
-     * @return KeySetOpt
-     */
     public function export(string $file): KeySetOpt
     {
-        $this->setOptions('-export ' . $file);
+        $this->setOptions('-export '.$file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string $file
-     * @return KeySetOpt
-     */
     public function expCert(string $file): KeySetOpt
     {
-        $this->setOptions('-expcert ' . $file);
+        $this->setOptions('-expcert '.$file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string $file
-     * @return KeySetOpt
-     */
     public function impCert(string $file): KeySetOpt
     {
-        $this->setOptions('-impcert ' . $file);
+        $this->setOptions('-impcert '.$file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function makeCert(): KeySetOpt
     {
         $this->setOptions('-makecert');
@@ -233,62 +163,42 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     * @param string $file
-     * @return KeySetOpt
-     */
     public function fMakeCert(string $file): KeySetOpt
     {
-        $this->setOptions('-fmakecert ' . $file);
+        $this->setOptions('-fmakecert '.$file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string $file
-     * @return KeySetOpt
-     */
     public function loadExt(string $file): KeySetOpt
     {
-        $this->setOptions('-loadext ' . $file);
+        $this->setOptions('-loadext '.$file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string $file
-     * @return KeySetOpt
-     */
     public function saveExt(string $file): KeySetOpt
     {
-        $this->setOptions('-saveext ' . $file);
+        $this->setOptions('-saveext '.$file);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     * @param string $oid
-     * @return KeySetOpt
-     */
     public function cleanExt(string $oid): KeySetOpt
     {
-        $this->setOptions('-cleanext ' . $oid);
+        $this->setOptions('-cleanext '.$oid);
         $opt = new KeySetOpt();
         $this->setOptions($opt);
 
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function noExt(): KeySetOpt
     {
         $this->setOptions('-noext');
@@ -298,10 +208,6 @@ final class KeySetOptions extends Options
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOpt
-     */
     public function stress(): KeySetOpt
     {
         $this->setOptions('-stress');
@@ -310,6 +216,4 @@ final class KeySetOptions extends Options
 
         return $opt;
     }
-
-
 }

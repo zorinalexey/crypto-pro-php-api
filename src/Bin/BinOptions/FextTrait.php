@@ -12,15 +12,14 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\VSignOptions;
 
 trait FextTrait
 {
-
     /**
      * Задать расширение для сообщений
-     * @param string $ext
+     *
      * @return SignOptions|FextTrait|AddSignfOptions|AddSignOptions|DelSignOptions|SignfOptions|VerifyOptions|VSignOptions
      */
     final public function fext(string $ext): self
     {
-        $this->setOptions("-fext ." . trim($ext, '.'));
+        $this->setOptions('-fext .'.trim($ext, '.'));
 
         return $this;
     }

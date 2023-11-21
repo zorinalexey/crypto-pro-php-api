@@ -8,7 +8,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CpConfig\Options\HardWare\RndmOptions;
 
 final class HardWareOptions extends Options
 {
-
     public function reader(): Reader
     {
         $opt = new Reader();

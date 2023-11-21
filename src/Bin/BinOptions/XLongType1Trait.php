@@ -13,6 +13,7 @@ trait XLongType1Trait
 {
     /**
      * Создать подписи CAdES-X Long Type 1
+     *
      * @return SignOptions|XLongType1Trait|AddSignfOptions|AddSignOptions|SignfOptions|VerifyOptions|VSignOptions
      */
     public function xlongtype1(): self

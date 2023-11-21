@@ -12,12 +12,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\RepeatTrait;
 
 final class PropertyCommandOptions extends Options
 {
-    use SilentTrait, InputFileTrait, AlgTrait, RepeatTrait, MachineTrait, StoreTrait, StoreNameTrait;
+    use AlgTrait, InputFileTrait, MachineTrait, RepeatTrait, SilentTrait, StoreNameTrait, StoreTrait;
     use GlobalOptionsTrait;
 
-    /**
-     * @return CertSearchOptions
-     */
     public function cert(): CertSearchOptions
     {
         $opt = new CertSearchOptions();
@@ -26,5 +23,4 @@ final class PropertyCommandOptions extends Options
 
         return $opt;
     }
-
 }

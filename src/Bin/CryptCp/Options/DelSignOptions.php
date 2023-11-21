@@ -8,16 +8,16 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\SignTypeTrait;
 
 class DelSignOptions extends Options
 {
-    use SignTypeTrait, KpsOptions, FextTrait;
+    use FextTrait, KpsOptions, SignTypeTrait;
 
     /**
      * Указать файл или сообщение для удаления из него подписи
-     * @param string $inputFile Файл, содержащий сообщение
-     * @param string $outputFile Файл, содержащий исходные данные
-     * @return void
+     *
+     * @param  string  $inputFile Файл, содержащий сообщение
+     * @param  string  $outputFile Файл, содержащий исходные данные
      */
     final public function file(string $inputFile, string $outputFile): void
     {
-        $this->setOptions('"' . $inputFile . '" "' . $outputFile . '" ');
+        $this->setOptions('"'.$inputFile.'" "'.$outputFile.'" ');
     }
 }

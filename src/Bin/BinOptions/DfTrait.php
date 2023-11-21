@@ -7,15 +7,14 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\CspCertOptions;
 
 trait DfTrait
 {
-
     /**
      * Использовать в качестве хранилища файл сертификата
-     * @param string $certFile
+     *
      * @return DfTrait|CopyCertOptions|CspCertOptions
      */
     final public function df(string $certFile): self
     {
-        $this->setOptions('-df "' . $certFile . '"');
+        $this->setOptions('-df "'.$certFile.'"');
 
         return $this;
     }

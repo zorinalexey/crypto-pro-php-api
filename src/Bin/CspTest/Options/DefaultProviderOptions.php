@@ -10,7 +10,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\DefaultProviderOptions\SetDe
 
 final class DefaultProviderOptions extends Options
 {
-    use SetDefaultTrait, ClearDefaultTrait;
+    use ClearDefaultTrait, SetDefaultTrait;
     use GlobalOptionsTrait;
 
     public function enum(): DefProviderOptions

@@ -8,12 +8,10 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PasswordOptions\PasswordOpti
 
 final class PasswordOptions extends Options
 {
-
     use GlobalOptionsTrait;
 
     /**
      * Создать новый набор ключей
-     * @return PasswordOpt
      */
     public function newKeySet(): PasswordOpt
     {
@@ -26,7 +24,6 @@ final class PasswordOptions extends Options
 
     /**
      * Установить контейнер по умолчанию
-     * @return PasswordOpt
      */
     public function def(): PasswordOpt
     {
@@ -39,7 +36,6 @@ final class PasswordOptions extends Options
 
     /**
      * Показать сохраненный пароль
-     * @return PasswordOpt
      */
     public function showSaved(): PasswordOpt
     {
@@ -52,7 +48,6 @@ final class PasswordOptions extends Options
 
     /**
      * Удалить сохраненный пароль
-     * @return PasswordOpt
      */
     public function delSaved(): PasswordOpt
     {
@@ -65,7 +60,6 @@ final class PasswordOptions extends Options
 
     /**
      * Удалить ярлыки
-     * @return PasswordOpt
      */
     public function delShortcut(): PasswordOpt
     {
@@ -78,7 +72,6 @@ final class PasswordOptions extends Options
 
     /**
      * Распечатать информацию о PIN на контейнере
-     * @return PasswordOpt
      */
     public function pinInfo(): PasswordOpt
     {
@@ -91,7 +84,6 @@ final class PasswordOptions extends Options
 
     /**
      * Информация для аутентификации
-     * @return PasswordOpt
      */
     public function authInfo(): PasswordOpt
     {
@@ -104,7 +96,6 @@ final class PasswordOptions extends Options
 
     /**
      * Удалить набор ключей (PP_DELETE_KEYSET)
-     * @return PasswordOpt
      */
     public function deleteKeySet(): PasswordOpt
     {
@@ -117,7 +108,6 @@ final class PasswordOptions extends Options
 
     /**
      * Проверить контейнер (полностью открытый контейнер)
-     * @return PasswordOpt
      */
     public function check(): PasswordOpt
     {
@@ -131,12 +121,10 @@ final class PasswordOptions extends Options
     /**
      * Установить симметричный ключ algid на symalg
      * GR3412_K, GR3412_M, 3DES, 3DES_112, DES, RC2, RC4, AES_128, AES_192, AES_256, GENERIC, GOST_GENERIC, G28147 - default
-     * @param string $alg
-     * @return PasswordOpt
      */
     public function algId(string $alg): PasswordOpt
     {
-        $this->setOptions('-algid ' . $alg);
+        $this->setOptions('-algid '.$alg);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
 
@@ -146,12 +134,10 @@ final class PasswordOptions extends Options
     /**
      * Изменить пароль для контейнера на PIN-код или использовать его в качестве пароля для контейнера
      * ENC в параметре -cchange, если он установлен.
-     * @param string $pin
-     * @return PasswordOpt
      */
     public function change(string $pin): PasswordOpt
     {
-        $this->setOptions('-change ' . $pin);
+        $this->setOptions('-change '.$pin);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
 
@@ -160,7 +146,6 @@ final class PasswordOptions extends Options
 
     /**
      * Окно смены пароля на контейнере
-     * @return PasswordOpt
      */
     public function qChange(): PasswordOpt
     {
@@ -173,12 +158,10 @@ final class PasswordOptions extends Options
 
     /**
      * Изменить пароль к контейнеру шифрования ENC
-     * @param string $pin
-     * @return PasswordOpt
      */
     public function cChange(string $pin): PasswordOpt
     {
-        $this->setOptions('-cchange ' . $pin);
+        $this->setOptions('-cchange '.$pin);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
 
@@ -187,12 +170,10 @@ final class PasswordOptions extends Options
 
     /**
      * Изменить пароль для разделения truct K
-     * @param string $truct
-     * @return PasswordOpt
      */
     public function kChange(string $truct): PasswordOpt
     {
-        $this->setOptions('-kchange ' . $truct);
+        $this->setOptions('-kchange '.$truct);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
 
@@ -201,12 +182,10 @@ final class PasswordOptions extends Options
 
     /**
      * Изменить пароль для разделения truct N
-     * @param string $truct
-     * @return PasswordOpt
      */
     public function nChange(string $truct): PasswordOpt
     {
-        $this->setOptions('-nchange ' . $truct);
+        $this->setOptions('-nchange '.$truct);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
 
@@ -215,12 +194,10 @@ final class PasswordOptions extends Options
 
     /**
      * Установить номера копий контейнера в новой схеме noname NK: A - номер для первой части, B - для второй и т.д.
-     * @param string $counts
-     * @return PasswordOpt
      */
     public function nkDupCounts(string $counts): PasswordOpt
     {
-        $this->setOptions('-nk_dupcounts ' . $counts);
+        $this->setOptions('-nk_dupcounts '.$counts);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
 
@@ -229,12 +206,10 @@ final class PasswordOptions extends Options
 
     /**
      * Установить контейнер шифрования ENC
-     * @param string $enc
-     * @return PasswordOpt
      */
     public function eContainer(string $enc): PasswordOpt
     {
-        $this->setOptions('-econtainer ' . $enc);
+        $this->setOptions('-econtainer '.$enc);
         $opt = new PasswordOpt();
         $this->setOptions($opt);
 

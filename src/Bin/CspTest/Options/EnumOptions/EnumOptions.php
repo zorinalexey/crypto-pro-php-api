@@ -15,7 +15,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\RepeatTrait;
 
 final class EnumOptions extends Options
 {
-    use ProviderTrait, ProvtypeTrait, CpLevelTrait, CpDllTrait, ContainerTrait, MachineTrait, RepeatTrait, SilentTrait;
+    use ContainerTrait, CpDllTrait, CpLevelTrait, MachineTrait, ProviderTrait, ProvtypeTrait, RepeatTrait, SilentTrait;
     use FlagsTrait, NoDataTrait, TypeTrait;
     use GlobalOptionsTrait;
 }

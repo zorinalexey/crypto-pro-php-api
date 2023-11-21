@@ -25,7 +25,7 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\XLongType1Trait;
 
 final class SignfOptions extends Options
 {
-    use DirTrait, KpsOptions, FileMaskTrait, SignTypeTrait, CertTrait, AddChainTrait, CrlTrait, DerTrait, StrictTrait;
-    use NoStampCertTrait, StampChainCheckTrait, XLongType1Trait, CadestTrait, CadesBesTrait, CadesTsaTrait, HashAlgTrait;
-    use PinTrait, FextTrait, KeepBadFilesTrait, ThreadsTrait;
+    use AddChainTrait, CertTrait, CrlTrait, DerTrait, DirTrait, FileMaskTrait, KpsOptions, SignTypeTrait, StrictTrait;
+    use CadesBesTrait, CadesTsaTrait, CadestTrait, HashAlgTrait, NoStampCertTrait, StampChainCheckTrait, XLongType1Trait;
+    use FextTrait, KeepBadFilesTrait, PinTrait, ThreadsTrait;
 }

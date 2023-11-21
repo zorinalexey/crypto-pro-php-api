@@ -8,6 +8,7 @@ trait VerAllTrait
 {
     /**
      * Проверять все подписи (иначе – только подписи авторов из КПС)
+     *
      * @return VerAllTrait|VerifyOptions
      */
     final public function verAll(): self

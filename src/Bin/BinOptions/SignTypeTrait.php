@@ -12,10 +12,10 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\VSignOptions;
 
 trait SignTypeTrait
 {
-
     /**
      * Тип подписи
-     * @param string $type
+     *
+     * @param  string  $type
      * attached - создать присоединённые подписи
      * detached - создать отсоединённые подписи в отдельных файлах
      * @return SignTypeTrait|AddSignfOptions|AddSignOptions|DelSignOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions
@@ -26,7 +26,7 @@ trait SignTypeTrait
         if ($type !== 'detached') {
             $type = 'attached';
         }
-        $this->setOptions('-' . $type);
+        $this->setOptions('-'.$type);
 
         return $this;
     }

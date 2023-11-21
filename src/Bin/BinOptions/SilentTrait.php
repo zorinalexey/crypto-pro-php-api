@@ -24,11 +24,11 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfEncOptions\SfEncOptions;
 
 trait SilentTrait
 {
-
     /**
      * Не интерактивный режим.
      * Возвращает ошибку в случае, если под заданные параметры подходит более одного сертификата (CRL),
      * в таком случае требуется указать более строгие критерии поиска.
+     *
      * @return CertSearchOptions|SilentTrait|Options|CreateCertOptions|CreateRequestOptions|AbsorbParamsOptions|EnumOptions|RegOptions|KeyCopyOptions|KeySetOptions|EncryptOptions|SignOptions|Certificate|IssuerOptions|MiniCaCrlOptions|OidOptions|PasswordOptions|PerfOptions|PropertyCommandOptions|SfEncOptions|\CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions\SignOptions
      */
     final public function silent(): self

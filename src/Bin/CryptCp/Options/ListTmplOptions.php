@@ -10,5 +10,5 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\TPasswordTrait;
 
 class ListTmplOptions extends Options
 {
-    use KpsOptions, CpCa20Trait, TokenTrait, TPasswordTrait, ClientCertTrait;
+    use ClientCertTrait, CpCa20Trait, KpsOptions, TokenTrait, TPasswordTrait;
 }

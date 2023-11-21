@@ -38,7 +38,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions;
 
 trait GlobalOptionsTrait
 {
-
     /**
      * @return EnumOptions|GlobalOptionsTrait|AbsorbOptions|AbsorbParamsOptions|CardOptions|EnumsOptions|SendOptions|CertKeyOptions|CertLicOptions|DefaultProviderOptions|DefProviderOptions|Options\EnumOptions\EnumOptions|HashOptions|IpSecOptions|CertSearchOptions|RegOptions|SignOptions|KeyCopyOptions|KeySetOptions|Options\KeySetOptions\KeySetOptions|LowEncOptions|EncryptOptions|LowSignOption|Options\LowSignOptions\SignOptions|MiniCaOptions|Certificate|MiniCaCrlOptions|OidOptions|PasswordOptions|Options\PasswordOptions\PasswordOptions|PropertyOptions|PropertyCommandOptions|RcOptions|RcChainOptions|RcIssuerOption|RcStoreOption|SfEncOptions|SfSignOptions|Options\SfSignOptions\SignOptions
      */
@@ -70,16 +69,15 @@ trait GlobalOptionsTrait
     }
 
     /**
-     * @param int|null $mode
      * @return EnumOptions|GlobalOptionsTrait|AbsorbOptions|AbsorbParamsOptions|CardOptions|EnumsOptions|SendOptions|CertKeyOptions|CertLicOptions|DefaultProviderOptions|DefProviderOptions|EnumOptions\EnumOptions|HashOptions|IpSecOptions|CertSearchOptions|RegOptions|SignOptions|KeyCopyOptions|KeySetOptions|KeySetOptions\KeySetOptions|LowEncOptions|EncryptOptions|LowSignOption|Options\LowSignOptions\SignOptions|MiniCaOptions|Certificate|MiniCaCrlOptions|OidOptions|PasswordOptions|PasswordOptions\PasswordOptions|PropertyOptions|PropertyCommandOptions|RcOptions|RcChainOptions|RcIssuerOption|RcStoreOption|SfEncOptions|SfSignOptions|SfSignOptions\SignOptions
      */
-    final public function stack(int|null $mode = null): self
+    final public function stack(int $mode = null): self
     {
         $mode ??= 3;
-        if (!in_array($mode, [0, 1, 2, 3])) {
+        if (! in_array($mode, [0, 1, 2, 3])) {
             $mode = 3;
         }
-        $this->setOptions('-stack ' . $mode);
+        $this->setOptions('-stack '.$mode);
 
         return $this;
     }

@@ -23,6 +23,7 @@ trait NoRevTrait
 {
     /**
      * Не проверять сертификаты в цепочке на предмет отозванности
+     *
      * @return ListTmplOptions|NoRevTrait|AddAttrOptions|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|StoreOptions
      */
     final public function norev(): self

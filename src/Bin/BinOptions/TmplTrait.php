@@ -6,15 +6,15 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\CreateCertOptions;
 
 trait TmplTrait
 {
-
     /**
      * Задать шаблон запрашиваемого сертификата
-     * @param string $tmplName Название или OID шаблона
+     *
+     * @param  string  $tmplName Название или OID шаблона
      * @return TmplTrait|CreateCertOptions
      */
     final public function tmpl(string $tmplName): self
     {
-        $this->setOptions('-tmpl ' . $tmplName);
+        $this->setOptions('-tmpl '.$tmplName);
 
         return $this;
     }

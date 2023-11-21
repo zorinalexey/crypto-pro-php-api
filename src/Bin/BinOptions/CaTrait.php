@@ -7,16 +7,16 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\PendCertOptions;
 
 trait CaTrait
 {
-
     /**
      * Указать адрес УЦ Microsoft
      * иначе это адрес http://www.cryptopro.ru/certsrv/
-     * @param string $url Адрес веб-интерфейса КриптоПро УЦ
+     *
+     * @param  string  $url Адрес веб-интерфейса КриптоПро УЦ
      * @return CaTrait|CreateCertOptions|PendCertOptions
      */
     final public function ca(string $url): self
     {
-        $this->setOptions('-ca ' . $url);
+        $this->setOptions('-ca '.$url);
 
         return $this;
     }

@@ -11,9 +11,6 @@ final class CardOptions extends Options
 {
     use GlobalOptionsTrait;
 
-    /**
-     * @return EnumsOptions
-     */
     public function enum(): EnumsOptions
     {
         $this->setOptions('-enum');
@@ -23,9 +20,6 @@ final class CardOptions extends Options
         return $opt;
     }
 
-    /**
-     * @return SendOptions
-     */
     public function send(): SendOptions
     {
         $this->setOptions('-enum');

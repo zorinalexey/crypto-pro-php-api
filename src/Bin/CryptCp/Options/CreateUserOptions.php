@@ -9,5 +9,5 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\CpCaTrait;
 
 class CreateUserOptions extends Options
 {
-    use CpCaTrait, CpCa20Trait, AddFieldDnTrait;
+    use AddFieldDnTrait, CpCa20Trait, CpCaTrait;
 }

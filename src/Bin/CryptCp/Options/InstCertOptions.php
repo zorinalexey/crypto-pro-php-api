@@ -17,6 +17,6 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\ProvtypeTrait;
 
 class InstCertOptions extends Options
 {
-    use ProvtypeTrait, ProvnameTrait, ContTrait, KuTrait, KmTrait, DmTrait, DuTrait, NoCspTrait, FromRequestTrait;
-    use PinTrait, EnableInstallRootTrait;
+    use ContTrait, DmTrait, DuTrait, FromRequestTrait, KmTrait, KuTrait, NoCspTrait, ProvnameTrait, ProvtypeTrait;
+    use EnableInstallRootTrait, PinTrait;
 }

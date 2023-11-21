@@ -10,9 +10,6 @@ final class SfSignOptions extends Options
 {
     use GlobalOptionsTrait;
 
-    /**
-     * @return SignOptions
-     */
     public function sign(): SignOptions
     {
         $this->setOptions('-sign');
@@ -22,9 +19,6 @@ final class SfSignOptions extends Options
         return $opt;
     }
 
-    /**
-     * @return SignOptions
-     */
     public function verify(): SignOptions
     {
         $this->setOptions('-verify');

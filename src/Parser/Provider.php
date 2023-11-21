@@ -10,41 +10,31 @@ final class Provider extends AbstractParser
 {
     use ParseTrait;
 
-    /**
-     * @var CryptoProManager|null
-     */
-    private static CryptoProManager|null $mgr = null;
-    private static self|null $current = null;
+    private static ?CryptoProManager $mgr = null;
 
+    private static ?self $current = null;
 
     /**
      * Имя провайдера
-     * @var string|null
      */
-    public string|null $name = null;
+    public ?string $name = null;
 
     /**
      * Тип провайдера
-     * @var int|null
      */
-    public int|null $type = null;
+    public ?int $type = null;
 
     /**
      * Тип ключа
-     * @var int|null
      */
-    public int|null $keyType = null;
+    public ?int $keyType = null;
 
     /**
      * Флаги
-     * @var string|null
      */
-    public string|null $flags = null;
+    public ?string $flags = null;
 
-    /**
-     * @var array|null
-     */
-    public array|null $providersByType = null;
+    public ?array $providersByType = null;
 
     public function __construct(CryptoProManager $mgr)
     {
@@ -62,42 +52,37 @@ final class Provider extends AbstractParser
         var_dump($this);
     }
 
-
     private function setProviderType(string|int $type): void
     {
-        $this->type = (int)$type;
+        $this->type = (int) $type;
         self::getProviderInfoByType($this->type);
     }
 
-    /**
-     * @param int $type
-     * @return array|null
-     */
-    public static function getProviderInfoByType(int $type): array|null
+    public static function getProviderInfoByType(int $type): ?array
     {
-        if (!self::$current) {
+        if (! self::$current) {
             self::$current = new self(new CryptoProManager());
         }
         self::$mgr->cpConfig()->defProv()->view()->provtype($type);
         $data = self::$mgr->exec();
-        if (!$data['code']) {
+        if (! $data['code']) {
             foreach ($data['output'] as $item) {
                 if (preg_match('~(\s+)(?<provider_type>\d+)(\s+)(?<provider_name>(.+))~iu', $item, $matches)) {
                     self::$current->providersByType[] = $matches['provider_name'];
                 }
             }
         }
+
         return self::$current->providersByType;
     }
 
     private function setKeyType(string|int $type): void
     {
-        $this->keyType = (int)$type;
+        $this->keyType = (int) $type;
     }
 
     private function setFlags(string $flags): void
     {
         $this->flags = $flags;
     }
-
 }

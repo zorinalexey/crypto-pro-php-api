@@ -20,6 +20,6 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\XLongType1Trait;
 
 class AddSignfOptions extends Options
 {
-    use SignTypeTrait, KpsOptions, DirTrait, FileMaskTrait, CertTrait, DerTrait, NoStampCertTrait, StampChainCheckTrait;
-    use XLongType1Trait, CadestTrait, CadesBesTrait, CadesTsaTrait, PinTrait, ThreadsTrait, FextTrait;
+    use CadesBesTrait, CadesTsaTrait, CadestTrait, FextTrait, PinTrait, ThreadsTrait, XLongType1Trait;
+    use CertTrait, DerTrait, DirTrait, FileMaskTrait, KpsOptions, NoStampCertTrait, SignTypeTrait, StampChainCheckTrait;
 }

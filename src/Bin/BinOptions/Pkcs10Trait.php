@@ -8,6 +8,7 @@ trait Pkcs10Trait
 {
     /**
      * Работать с PKCS#10-файлом.
+     *
      * @return Pkcs10Trait|Options
      */
     final public function pkcs10(): self

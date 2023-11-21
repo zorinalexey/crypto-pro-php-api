@@ -12,6 +12,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\OutputFileTrait;
 
 final class HashOptions extends Options
 {
-    use ProvtypeTrait, AlgTrait, InputFileTrait, OutputFileTrait, ProviderTrait;
+    use AlgTrait, InputFileTrait, OutputFileTrait, ProviderTrait, ProvtypeTrait;
     use GlobalOptionsTrait;
 }

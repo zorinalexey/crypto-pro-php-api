@@ -10,9 +10,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\PendCertOptions;
 
 trait DmTrait
 {
-
     /**
      * Скопировать в хранилище компьютера (LOCAL_MACHINE)
+     *
      * @return CspCertOptions|DmTrait|CopyCertOptions|CreateCertOptions|InstCertOptions|PendCertOptions
      */
     final public function dm(): self

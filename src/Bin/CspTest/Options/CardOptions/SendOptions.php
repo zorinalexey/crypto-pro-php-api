@@ -9,5 +9,5 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\OutputFileTrait;
 
 final class SendOptions extends Options
 {
-    use GlobalOptionsTrait, InputFileTrait, OutputFileTrait, TimeTrait, T0Trait, ReaderTrait;
+    use GlobalOptionsTrait, InputFileTrait, OutputFileTrait, ReaderTrait, T0Trait, TimeTrait;
 }

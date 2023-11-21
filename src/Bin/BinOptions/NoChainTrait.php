@@ -23,6 +23,7 @@ trait NoChainTrait
 {
     /**
      * Не проверять цепочки найденных сертификатов
+     *
      * @return AddAttrOptions|NoChainTrait|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|ListTmplOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|StoreOptions
      */
     final public function nochain(): self

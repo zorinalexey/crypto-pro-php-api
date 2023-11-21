@@ -11,7 +11,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\IpSecOptions\ProviderTrait;
 
 class Certificate extends Options
 {
-    use DnTrait, ProviderTrait, ProvtypeTrait, SilentTrait, KeyTypeTrait, LengthTrait, CertUsageTrait, CdpTrait;
-    use AltNameTrait, FromTrait, UntilTrait, IssuerTrait;
+    use AltNameTrait, FromTrait, IssuerTrait, UntilTrait;
+    use CdpTrait, CertUsageTrait, DnTrait, KeyTypeTrait, LengthTrait, ProviderTrait, ProvtypeTrait, SilentTrait;
     use GlobalOptionsTrait;
 }

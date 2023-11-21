@@ -9,6 +9,7 @@ trait AuthAttrTrait
 {
     /**
      * Добавить подписанный атрибут в подпись
+     *
      * @return AddSignOptions|AuthAttrTrait|SignOptions
      */
     final public function authattr(): self

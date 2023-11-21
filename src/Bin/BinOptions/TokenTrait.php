@@ -10,12 +10,12 @@ trait TokenTrait
 {
     /**
      * Задать маркер временного доступа для проверки статуса
-     * @param string $token
+     *
      * @return CheckRegOptions|TokenTrait|CreateCertOptions|ListTmplOptions|PendCertOptions
      */
     final public function token(string $token): self
     {
-        $this->setOptions('-token ' . $token);
+        $this->setOptions('-token '.$token);
 
         return $this;
     }

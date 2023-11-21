@@ -21,8 +21,8 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\UserStoreTrait;
 
 class EncryptOptions extends Options
 {
-    use AlgTrait, InputFileTrait, OutputFileTrait, PasswordTrait, Base64Trait, CertTrait, SilentTrait, AskTrait;
-    use UserStoreTrait, LocalStoreTrait, UserCertTrait, LocalCertTrait, AlgKekTrait, CmsModeTrait;
+    use AlgKekTrait, CmsModeTrait, LocalCertTrait, LocalStoreTrait, UserCertTrait, UserStoreTrait;
+    use AlgTrait, AskTrait, Base64Trait, CertTrait, InputFileTrait, OutputFileTrait, PasswordTrait, SilentTrait;
     use GlobalOptionsTrait;
 
     public function __construct()

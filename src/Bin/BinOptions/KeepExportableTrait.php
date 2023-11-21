@@ -6,9 +6,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CertMgr\Options;
 
 trait KeepExportableTrait
 {
-
     /**
      * Пометить импортированные ключи как экспортируемые.
+     *
      * @return KeepExportableTrait|Options
      */
     final public function keepExportable(): self

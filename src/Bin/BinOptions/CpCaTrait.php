@@ -12,12 +12,13 @@ trait CpCaTrait
     /**
      * Указать адрес веб-интерфейса КриптоПро УЦ
      * иначе это адрес https://cryptopro.ru/ui
-     * @param string $url Адрес веб-интерфейса КриптоПро УЦ
+     *
+     * @param  string  $url Адрес веб-интерфейса КриптоПро УЦ
      * @return ListDnOptions|CheckRegOptions|CpCaTrait|CreateCertOptions|CreateUserOptions|PendCertOptions
      */
     final public function cpCa(string $url): self
     {
-        $this->setOptions('-cpca ' . $url);
+        $this->setOptions('-cpca '.$url);
 
         return $this;
     }

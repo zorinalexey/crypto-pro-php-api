@@ -13,6 +13,7 @@ trait CadesBesTrait
 {
     /**
      * создать подписи CAdES-BES
+     *
      * @return SignOptions|CadesBesTrait|AddSignfOptions|AddSignOptions|SignfOptions|VerifyOptions|VSignOptions
      */
     public function cadesbes(): self

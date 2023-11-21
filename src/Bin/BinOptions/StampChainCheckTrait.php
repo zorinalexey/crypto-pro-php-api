@@ -11,6 +11,7 @@ trait StampChainCheckTrait
 {
     /**
      * Проверить цепочку сертификата в штампе времени
+     *
      * @return SignOptions|StampChainCheckTrait|AddSignfOptions|AddSignOptions|SignfOptions
      */
     final public function stampchaincheck(): self

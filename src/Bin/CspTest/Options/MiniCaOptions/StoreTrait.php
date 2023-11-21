@@ -5,11 +5,9 @@ namespace CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\MiniCaOptions;
 trait StoreTrait
 {
     /**
-     * @param string|null $typeStore
-     * @param string|null $nameStore
      * @return $this
      */
-    final public function store(string|null $typeStore = null, string|null $nameStore = null): self
+    final public function store(string $typeStore = null, string $nameStore = null): self
     {
         $nameStore ??= 'My';
         $typeStore ??= 'u';
@@ -19,16 +17,16 @@ trait StoreTrait
             'Root',
             'CA',
             'Cache',
-            'AddressBook'
+            'AddressBook',
         ];
         $typeStore = mb_strtolower($typeStore);
         if ($typeStore !== 'user' && $typeStore !== 'u') {
             $typeStore = 'm';
         }
-        if (!in_array($nameStore, $stores)) {
-            $store = $typeStore . 'My';
+        if (! in_array($nameStore, $stores)) {
+            $store = $typeStore.'My';
         }
-        $this->setOptions('-rstore ' . $store);
+        $this->setOptions('-rstore '.$store);
 
         return $this;
     }

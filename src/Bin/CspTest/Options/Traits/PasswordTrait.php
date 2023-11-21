@@ -11,14 +11,12 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions\SignOptions as
 
 trait PasswordTrait
 {
-
     /**
-     * @param string $pin
      * @return PasswordTrait|KeySetOptions|EncryptOptions|SignOptions|OidOptions|SfEncOptions|SfSignOptions
      */
     final public function password(string $pin): self
     {
-        $this->setOptions('-password ' . $pin);
+        $this->setOptions('-password '.$pin);
 
         return $this;
     }

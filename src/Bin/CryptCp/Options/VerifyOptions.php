@@ -14,17 +14,17 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\XLongType1Trait;
 
 class VerifyOptions extends Options
 {
-    use SignTypeTrait, KpsOptions, XLongType1Trait, CadestTrait, CadesBesTrait, NoCadesTrait, KeepBadFilesTrait;
-    use VerAllTrait, FextTrait;
+    use CadesBesTrait, CadestTrait, KeepBadFilesTrait, KpsOptions, NoCadesTrait, SignTypeTrait, XLongType1Trait;
+    use FextTrait, VerAllTrait;
 
     /**
      * Указать файл для шифрования
-     * @param string $inputFile Файл, содержащий исходные данные
-     * @param string $outputFile Файл, в который будут записаны данные из сообщения
-     * @return void
+     *
+     * @param  string  $inputFile Файл, содержащий исходные данные
+     * @param  string  $outputFile Файл, в который будут записаны данные из сообщения
      */
     final public function file(string $inputFile, string $outputFile): void
     {
-        $this->setOptions('"' . $inputFile . '" "' . $outputFile . '" ');
+        $this->setOptions('"'.$inputFile.'" "'.$outputFile.'" ');
     }
 }

@@ -6,7 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\LowEncOptions\StoreOptions;
 
 trait UserCertTrait
 {
-
     final public function userCert(): StoreOptions
     {
         $opt = new StoreOptions('cert');

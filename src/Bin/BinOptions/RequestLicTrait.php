@@ -10,6 +10,7 @@ trait RequestLicTrait
     /**
      * Запросить сертификат со встроенной лицензией на Крипто-Про CSP;
      * УЦ должен быть настроен на выдачу таких сертификатов
+     *
      * @return RequestLicTrait|CreateCertOptions|CreateRequestOptions
      */
     final public function requestLic(): self

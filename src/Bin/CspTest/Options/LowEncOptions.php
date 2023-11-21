@@ -10,9 +10,6 @@ final class LowEncOptions extends Options
 {
     use GlobalOptionsTrait;
 
-    /**
-     * @return EncryptOptions
-     */
     public function encrypt(): EncryptOptions
     {
         $opt = new EncryptOptions();
@@ -21,9 +18,6 @@ final class LowEncOptions extends Options
         return $opt;
     }
 
-    /**
-     * @return EncryptOptions
-     */
     public function decrypt(): EncryptOptions
     {
         $opt = new EncryptOptions();

@@ -8,5 +8,5 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\CpCaTrait;
 
 class ListDnOptions extends Options
 {
-    use CpCaTrait, CpCa20Trait;
+    use CpCa20Trait, CpCaTrait;
 }

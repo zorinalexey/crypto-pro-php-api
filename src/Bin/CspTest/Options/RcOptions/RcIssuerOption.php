@@ -7,6 +7,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 
 class RcIssuerOption extends Options
 {
-    use RcIssuerTrait;
     use GlobalOptionsTrait;
+    use RcIssuerTrait;
 }

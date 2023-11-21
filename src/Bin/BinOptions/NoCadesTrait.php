@@ -9,6 +9,7 @@ trait NoCadesTrait
 {
     /**
      * Запретить использование вложенных в подписи доказательств
+     *
      * @return NoCadesTrait|VerifyOptions|VSignOptions
      */
     final public function nocades(): self

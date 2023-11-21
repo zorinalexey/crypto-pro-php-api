@@ -18,7 +18,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\UserStoreTrait;
 
 final class SfEncOptions extends Options
 {
-    use InputFileTrait, OutputFileTrait, UserStoreTrait, LocalStoreTrait, PasswordTrait, Base64Trait;
-    use UserCertTrait, LocalCertTrait, AskTrait, AlgTrait, SilentTrait;
+    use AlgTrait, AskTrait, LocalCertTrait, SilentTrait, UserCertTrait;
+    use Base64Trait, InputFileTrait, LocalStoreTrait, OutputFileTrait, PasswordTrait, UserStoreTrait;
     use GlobalOptionsTrait;
 }

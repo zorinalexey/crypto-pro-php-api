@@ -11,6 +11,7 @@ trait NoStampCertTrait
 {
     /**
      * Не требовать включения в штамп сертификата службы штампов времени
+     *
      * @return SignOptions|NoStampCertTrait|AddSignfOptions|AddSignOptions|SignfOptions
      */
     final public function nostampcert(): self

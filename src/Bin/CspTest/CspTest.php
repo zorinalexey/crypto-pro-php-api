@@ -28,7 +28,7 @@ use stdClass;
 
 class CspTest extends Bin
 {
-    protected static string $bin = self::APP_BIN_PATH . DIRECTORY_SEPARATOR . 'csptest' . self::APP_EXT;
+    protected static string $bin = self::APP_BIN_PATH.DIRECTORY_SEPARATOR.'csptest'.self::APP_EXT;
 
     public function __construct()
     {
@@ -37,7 +37,6 @@ class CspTest extends Bin
 
     /**
      * Тест низкоуровневого шифрования/дешифрования
-     * @return LowEncOptions
      */
     final public function lowEnc(): LowEncOptions
     {
@@ -50,7 +49,6 @@ class CspTest extends Bin
 
     /**
      * Тест шифрования/дешифрования сообщений на упрощенном уровне
-     * @return SfEncOptions
      */
     final public function sfEnc(): SfEncOptions
     {
@@ -64,7 +62,6 @@ class CspTest extends Bin
     /**
      * Низкоуровневый тест подписи сообщений
      * Вместо этого используйте '-lowsign -repeat NN'!
-     * @return LowSignOption
      */
     final public function lowSign(): LowSignOption
     {
@@ -77,7 +74,6 @@ class CspTest extends Bin
 
     /**
      * Упрощенный тест подписи/проверки сообщений
-     * @return SfSignOptions
      */
     final public function sfSign(): SfSignOptions
     {
@@ -90,7 +86,6 @@ class CspTest extends Bin
 
     /**
      * Упрощенный тест подписи/проверки сообщений (устаревшее и не рекомендовано к использованию)
-     * @return SfSignOptions
      */
     final public function cmsSfSign(): SfSignOptions
     {
@@ -101,10 +96,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return IpSecOptions
-     */
     final public function ipSec(): IpSecOptions
     {
         $opt = new IpSecOptions();
@@ -114,10 +105,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return DefaultProviderOptions
-     */
     final public function defProv(): DefaultProviderOptions
     {
         $opt = new DefaultProviderOptions();
@@ -127,10 +114,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return PropertyOptions
-     */
     final public function property(): PropertyOptions
     {
         $opt = new PropertyOptions();
@@ -140,10 +123,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return HashOptions
-     */
     final public function hash(): HashOptions
     {
         $this->setCommand('-hash');
@@ -153,10 +132,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return CertKeyOptions
-     */
     final public function certKey(): CertKeyOptions
     {
         $this->setCommand('-certkey');
@@ -166,10 +141,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return AbsorbOptions
-     */
     final public function absorb(): AbsorbOptions
     {
         $this->setCommand('-absorb');
@@ -179,11 +150,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-
-    /**
-     *
-     * @return IpSecOptions
-     */
     final public function tlss(): IpSecOptions
     {
         $opt = new stdClass();
@@ -193,11 +159,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-
-    /**
-     *
-     * @return IpSecOptions
-     */
     final public function tlsc(): IpSecOptions
     {
         $opt = new stdClass();
@@ -207,11 +168,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-
-    /**
-     *
-     * @return CertLicOptions
-     */
     final public function certLic(): CertLicOptions
     {
         $this->setCommand('-certlic');
@@ -221,10 +177,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return RcOptions
-     */
     final public function rc(): RcOptions
     {
         $this->setCommand('-rc');
@@ -234,11 +186,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-
-    /**
-     *
-     * @return MiniCaOptions
-     */
     final public function miniCa(): MiniCaOptions
     {
         $this->setCommand('-minica');
@@ -248,11 +195,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-
-    /**
-     *
-     * @return OidOptions
-     */
     final public function oid(): OidOptions
     {
         $this->setCommand('-oid');
@@ -262,11 +204,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-
-    /**
-     *
-     * @return PasswordOptions
-     */
     final public function passwd(): PasswordOptions
     {
         $this->setCommand('-passwd');
@@ -276,11 +213,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-
-    /**
-     *
-     * @return KeyCopyOptions
-     */
     final public function keyCopy(): KeyCopyOptions
     {
         $this->setCommand('-keycopy');
@@ -290,10 +222,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return KeySetOptions
-     */
     final public function keySet(): KeySetOptions
     {
         $this->setCommand('-keyset');
@@ -303,10 +231,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return CardOptions
-     */
     final public function card(): CardOptions
     {
         $opt = new CardOptions();
@@ -316,10 +240,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return EnumOptions
-     */
     final public function enum(): EnumOptions
     {
         $opt = new EnumOptions();
@@ -329,10 +249,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return PerfOptions
-     */
     final public function perf(): PerfOptions
     {
         $opt = new PerfOptions();
@@ -342,10 +258,6 @@ class CspTest extends Bin
         return $opt;
     }
 
-    /**
-     *
-     * @return SpeedOptions
-     */
     final public function speed(): SpeedOptions
     {
         $opt = new SpeedOptions();

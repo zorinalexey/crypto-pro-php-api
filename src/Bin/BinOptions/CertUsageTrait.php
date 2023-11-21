@@ -9,7 +9,8 @@ trait CertUsageTrait
 {
     /**
      * Задать назначения сертификата <OID>
-     * @param string $usage Назначение сертификата
+     *
+     * @param  string  $usage Назначение сертификата
      * @return CreateRequestOptions|CertUsageTrait|CreateCertOptions
      */
     final public function certUsage(string $usage): self

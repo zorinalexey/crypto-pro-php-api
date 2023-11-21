@@ -11,5 +11,5 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\EndStoreNameTrait;
 
 class CopyCertOptions extends Options
 {
-    use KpsOptions, DerTrait, DmTrait, DuTrait, DfTrait, EndStoreNameTrait;
+    use DerTrait, DfTrait, DmTrait, DuTrait, EndStoreNameTrait, KpsOptions;
 }

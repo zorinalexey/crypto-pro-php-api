@@ -23,6 +23,7 @@ trait NoNetTrait
 {
     /**
      * использовать только кэшированные URL при построении цепочки
+     *
      * @return AddAttrOptions|NoNetTrait|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|ListTmplOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|StoreOptions
      */
     final public function nonet(): self

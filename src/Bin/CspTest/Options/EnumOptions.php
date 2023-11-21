@@ -10,9 +10,6 @@ final class EnumOptions extends Options
 {
     use GlobalOptionsTrait;
 
-    /**
-     * @return EnumOpt
-     */
     public function test(): EnumOpt
     {
         $this->setOptions('-test');
@@ -22,9 +19,6 @@ final class EnumOptions extends Options
         return $opt;
     }
 
-    /**
-     * @return EnumOpt
-     */
     public function info(): EnumOpt
     {
         $this->setOptions('-info');
@@ -33,5 +27,4 @@ final class EnumOptions extends Options
 
         return $opt;
     }
-
 }

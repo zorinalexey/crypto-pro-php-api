@@ -6,7 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\IpSecOptions\CertSearchOptio
 
 trait NameTrait
 {
-
     final public function name(): CertSearchOptions
     {
         $this->setOptions('-name');

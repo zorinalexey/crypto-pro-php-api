@@ -23,7 +23,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\RepeatTrait;
 
 final class PerfOptions extends Options
 {
-    use ProviderTrait, ProvtypeTrait, CpLevelTrait, CpDllTrait, SilentTrait, VerifyContextTrait, RepeatTrait;
-    use TargetTimeTrait, MaxItersTrait, MinItersTrait, CyclesTrait, OldCodeTrait, MmxSseDisableTrait, Ssse3DisableTrait;
     use AvxDisableTrait, FastCodeTrait, SleepTrait;
+    use CpDllTrait, CpLevelTrait, ProviderTrait, ProvtypeTrait, RepeatTrait, SilentTrait, VerifyContextTrait;
+    use CyclesTrait, MaxItersTrait, MinItersTrait, MmxSseDisableTrait, OldCodeTrait, Ssse3DisableTrait, TargetTimeTrait;
 }

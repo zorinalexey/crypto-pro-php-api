@@ -7,12 +7,11 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\HashOptions;
 trait HexTrait
 {
     /**
-     * @param string $hashFunction
      * @return HashOptions|HexTrait
      */
     final public function hex(string $hashFunction): self
     {
-        $this->setOptions('-hex ' . $hashFunction);
+        $this->setOptions('-hex '.$hashFunction);
 
         return $this;
     }

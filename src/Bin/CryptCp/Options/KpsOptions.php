@@ -13,16 +13,17 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\ThumbprintTrait;
 
 trait KpsOptions
 {
-    use DnTrait, AllTrait, ThumbprintTrait, IssuerTrait, NoChainTrait, ErrChainTrait, NoRevTrait, NoNetTrait;
+    use AllTrait, DnTrait, ErrChainTrait, IssuerTrait, NoChainTrait, NoNetTrait, NoRevTrait, ThumbprintTrait;
 
     /**
      * Выбрать хранилище для поиска сертификата
-     * @param string|null $store Тип хранилища:
+     *
+     * @param  string|null  $store Тип хранилища:
      *  user - хранилище пользователя (по умолчанию)
      *  во всех других случаях - хранилище машины
      * @return $this
      */
-    final public function store(string|null $store = null): self
+    final public function store(string $store = null): self
     {
         $store = mb_strtolower($store);
         if ($store === 'user') {
@@ -37,29 +38,31 @@ trait KpsOptions
 
     /**
      * Использовать сообщение или файл сертификата
-     * @param string $file Файл сообщения или сертификата
+     *
+     * @param  string  $file Файл сообщения или сертификата
      * @return $this
      */
     final public function certOrMessage(string $file): self
     {
-        $this->setOptions("-f '" . $file . "'");
+        $this->setOptions("-f '".$file."'");
 
         return $this;
     }
 
     /**
      * Задать количество сертификатов для поиска
-     * @param int|null $count
+     *
      * @return $this
      */
-    final public function certsCount(int|null $count = null): self
+    final public function certsCount(int $count = null): self
     {
         $count ??= 1;
         if ($count > 1) {
-            $this->setOptions('-q' . $count);
+            $this->setOptions('-q'.$count);
         } else {
             $this->setOptions('-1');
         }
+
         return $this;
     }
 }

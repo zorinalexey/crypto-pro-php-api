@@ -24,17 +24,15 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\RcOptions\RcStoreOption;
 
 trait ThumbprintTrait
 {
-
     /**
      * Цифровой отпечаток сертификата для фильтрации.
-     * @param string $certSha1
+     *
      * @return AddAttrOptions|ThumbprintTrait|Options|\CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|ListTmplOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|CertSearchOptions|StoreOptions|RcStoreOption
      */
     final public function thumbprint(string $certSha1): self
     {
-        $this->setOptions('-thumbprint ' . $certSha1);
+        $this->setOptions('-thumbprint '.$certSha1);
 
         return $this;
     }
-
 }

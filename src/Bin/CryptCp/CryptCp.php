@@ -28,7 +28,7 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\VSignOptions;
 
 final class CryptCp extends Bin
 {
-    private static string $bin = self::APP_BIN_PATH . DIRECTORY_SEPARATOR . 'cryptcp' . self::APP_EXT;
+    private static string $bin = self::APP_BIN_PATH.DIRECTORY_SEPARATOR.'cryptcp'.self::APP_EXT;
 
     public function __construct()
     {
@@ -37,7 +37,6 @@ final class CryptCp extends Bin
 
     /**
      * Зашифровать данные и создать сообщение
-     * @return EncryptOptions
      */
     public function encrypt(): EncryptOptions
     {
@@ -50,7 +49,6 @@ final class CryptCp extends Bin
 
     /**
      * Расшифровать данные из сообщения
-     * @return DecryptOptions
      */
     public function decrypt(): DecryptOptions
     {
@@ -63,7 +61,6 @@ final class CryptCp extends Bin
 
     /**
      * Произвести хеширование содержимого файлов и записать результат в «имя_исходного_файла.hsh»
-     * @return HashOptions
      */
     public function hash(): HashOptions
     {
@@ -76,7 +73,6 @@ final class CryptCp extends Bin
 
     /**
      * Проверить значение хэша файла
-     * @return HashOptions
      */
     public function vHash(): HashOptions
     {
@@ -89,7 +85,6 @@ final class CryptCp extends Bin
 
     /**
      * Создание подписи для файла
-     * @return SignfOptions
      */
     public function signF(): SignfOptions
     {
@@ -102,7 +97,6 @@ final class CryptCp extends Bin
 
     /**
      * Проверка подписи файла
-     * @return VSignOptions
      */
     public function vSignF(): VSignOptions
     {
@@ -115,7 +109,6 @@ final class CryptCp extends Bin
 
     /**
      * Добавление подписи в файл
-     * @return AddSignfOptions
      */
     public function addSignF(): AddSignfOptions
     {
@@ -128,7 +121,6 @@ final class CryptCp extends Bin
 
     /**
      * Создание подписанного сообщения
-     * @return SignOptions
      */
     public function sign(): SignOptions
     {
@@ -141,7 +133,6 @@ final class CryptCp extends Bin
 
     /**
      * Добавление подписи в сообщение
-     * @return AddSignOptions
      */
     public function addSign(): AddSignOptions
     {
@@ -154,7 +145,6 @@ final class CryptCp extends Bin
 
     /**
      * Удаление подписи из сообщения
-     * @return DelSignOptions
      */
     public function delSign(): DelSignOptions
     {
@@ -167,7 +157,6 @@ final class CryptCp extends Bin
 
     /**
      * Проверка подписи
-     * @return VerifyOptions
      */
     public function verify(): VerifyOptions
     {
@@ -180,7 +169,6 @@ final class CryptCp extends Bin
 
     /**
      * Проверка подписи
-     * @return AddAttrOptions
      */
     public function addAttr(): AddAttrOptions
     {
@@ -193,7 +181,6 @@ final class CryptCp extends Bin
 
     /**
      * Копирование сертификата в хранилище
-     * @return CopyCertOptions
      */
     public function copyCert(): CopyCertOptions
     {
@@ -206,7 +193,6 @@ final class CryptCp extends Bin
 
     /**
      * Копирование сертификата из ключевого контейнера в хранилище
-     * @return CspCertOptions
      */
     public function cspCert(): CspCertOptions
     {
@@ -219,7 +205,6 @@ final class CryptCp extends Bin
 
     /**
      * Удаление сертификата из хранилища локальной машины
-     * @return DelCertOptions
      */
     public function delCert(): DelCertOptions
     {
@@ -232,7 +217,6 @@ final class CryptCp extends Bin
 
     /**
      * Создание и сохранение запроса сертификата
-     * @return CreateRequestOptions
      */
     public function createRequest(): CreateRequestOptions
     {
@@ -245,7 +229,6 @@ final class CryptCp extends Bin
 
     /**
      * Установка сертификата из файла
-     * @return InstCertOptions
      */
     public function instCert(): InstCertOptions
     {
@@ -258,7 +241,6 @@ final class CryptCp extends Bin
 
     /**
      * Просмотр настроек учетных записей пользователей УЦ
-     * @return ListDnOptions
      */
     public function listDn(): ListDnOptions
     {
@@ -271,7 +253,6 @@ final class CryptCp extends Bin
 
     /**
      * Регистрация пользователя на УЦ
-     * @return CreateUserOptions
      */
     public function createUser(): CreateUserOptions
     {
@@ -284,7 +265,6 @@ final class CryptCp extends Bin
 
     /**
      * Проверка регистрации пользователя на УЦ
-     * @return CheckRegOptions
      */
     public function checkReg(): CheckRegOptions
     {
@@ -297,7 +277,6 @@ final class CryptCp extends Bin
 
     /**
      * Просмотр списка шаблонов сертификатов, доступных пользователю УЦ
-     * @return ListTmplOptions
      */
     public function listTmpl(): ListTmplOptions
     {
@@ -310,7 +289,6 @@ final class CryptCp extends Bin
 
     /**
      * Создание запроса, получение и установка сертификата
-     * @return CreateCertOptions
      */
     public function createCert(): CreateCertOptions
     {
@@ -323,7 +301,6 @@ final class CryptCp extends Bin
 
     /**
      * Проверка выпуска сертификата, получение и установка сертификата
-     * @return PendCertOptions
      */
     public function pendCert(): PendCertOptions
     {
@@ -333,5 +310,4 @@ final class CryptCp extends Bin
 
         return $opt;
     }
-
 }

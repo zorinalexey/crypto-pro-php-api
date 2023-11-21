@@ -11,12 +11,11 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PerfOptions;
 trait CpDllTrait
 {
     /**
-     * @param string $dll
      * @return PerfOptions|EnumOptions|KeySetOptions|OidOptions|CpDllTrait|PasswordOptions
      */
     final public function cpDll(string $dll): self
     {
-        $this->setOptions('--cpdll "' . $dll . '"');
+        $this->setOptions('--cpdll "'.$dll.'"');
 
         return $this;
     }

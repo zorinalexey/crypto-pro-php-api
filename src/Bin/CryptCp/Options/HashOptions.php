@@ -11,5 +11,5 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\ProvtypeTrait;
 
 final class HashOptions extends Options
 {
-    use DirTrait, ProvnameTrait, ProvtypeTrait, HexTrait, FileMaskTrait;
+    use DirTrait, FileMaskTrait, HexTrait, ProvnameTrait, ProvtypeTrait;
 }

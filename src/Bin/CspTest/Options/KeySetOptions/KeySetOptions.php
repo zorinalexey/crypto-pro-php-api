@@ -27,11 +27,11 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\SignatureTrait;
 
 final class KeySetOptions extends Options
 {
-    use SilentTrait, CpLevelTrait, CpDllTrait, ThreadsTrait, ProviderTrait, ProvtypeTrait, PassesTrait;
-    use VerifyContextTrait, ContainerTrait, UniqueTrait, FQcnTrait, FilterByTypeTrait, MachineKeySetTrait;
-    use ExportableTrait, ProtectedTrait, DefaultOptionalTrait, PatternTrait, FilterTrait, KeyTypeTrait;
-    use RewritableTrait, HashOutTrait, InputFileTrait, OutputFileTrait, SignatureTrait, CertificateTrait;
-    use ImportTrait, PubKeyTrait, Base64Trait, HardRngTrait, LengthTrait, PasswordTrait, RootPasswordTrait;
-    use NullPasswdTrait, CounterTrait, WaitCarrierTrait, WaitFileTrait;
+    use Base64Trait, HardRngTrait, ImportTrait, LengthTrait, PasswordTrait, PubKeyTrait, RootPasswordTrait;
+    use CertificateTrait, HashOutTrait, InputFileTrait, OutputFileTrait, RewritableTrait, SignatureTrait;
+    use ContainerTrait, FilterByTypeTrait, FQcnTrait, MachineKeySetTrait, UniqueTrait, VerifyContextTrait;
+    use CounterTrait, NullPasswdTrait, WaitCarrierTrait, WaitFileTrait;
+    use CpDllTrait, CpLevelTrait, PassesTrait, ProviderTrait, ProvtypeTrait, SilentTrait, ThreadsTrait;
+    use DefaultOptionalTrait, ExportableTrait, FilterTrait, KeyTypeTrait, PatternTrait, ProtectedTrait;
     use GlobalOptionsTrait;
 }

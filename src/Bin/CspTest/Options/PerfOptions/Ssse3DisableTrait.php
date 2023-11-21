@@ -6,7 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PerfOptions;
 
 trait Ssse3DisableTrait
 {
-
     /**
      * @return PerfOptions|Ssse3DisableTrait
      */

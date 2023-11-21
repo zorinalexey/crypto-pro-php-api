@@ -14,12 +14,11 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PerfOptions;
 trait ProviderTrait
 {
     /**
-     * @param string $providerName
      * @return EnumOptions|AbsorbParamsOptions|HashOptions|ProviderTrait|KeySetOptions|Certificate|OidOptions|PasswordOptions|PerfOptions
      */
     final public function provider(string $providerName): self
     {
-        $this->setOptions('-provider "' . $providerName . '"');
+        $this->setOptions('-provider "'.$providerName.'"');
 
         return $this;
     }

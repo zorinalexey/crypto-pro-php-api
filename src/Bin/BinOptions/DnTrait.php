@@ -25,18 +25,16 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\RcOptions\RcStoreOption;
 
 trait DnTrait
 {
-
     /**
      * Критерии поиска для сертификата.
      * Если более одного сертификата удовлетворяют заданным критериям,
      * пользователю будет предложено выбрать один из найденных.
-     * @param string $dnKey
-     * @param string $dnValue
+     *
      * @return ListTmplOptions|DnTrait|Options|\CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options|AddAttrOptions|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|CertSearchOptions|StoreOptions|Certificate|RcStoreOption
      */
     final public function dn(string $dnKey, string $dnValue): self
     {
-        $searchString = $dnKey . '="' . $dnValue . '"';
+        $searchString = $dnKey.'="'.$dnValue.'"';
         $this->setOptions($searchString, '-dn', ', ');
 
         return $this;

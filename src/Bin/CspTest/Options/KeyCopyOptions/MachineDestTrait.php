@@ -6,7 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\KeyCopyOptions;
 
 trait MachineDestTrait
 {
-
     /**
      * @return MachineSrcTrait|KeyCopyOptions
      */

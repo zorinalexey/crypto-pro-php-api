@@ -10,9 +10,6 @@ final class IssuerOptions extends Options
 {
     use SilentTrait;
 
-    /**
-     * @return CertSearchOptions
-     */
     public function issuer(): CertSearchOptions
     {
         $this->setOptions('-issuer');
@@ -24,19 +21,19 @@ final class IssuerOptions extends Options
 
     public function password(string $password): self
     {
-        $this->setOptions('-ipassword ' . $password);
+        $this->setOptions('-ipassword '.$password);
 
         return $this;
     }
 
     public function alg(string $oidAlg): self
     {
-        $this->setOptions('-ialg ' . $oidAlg);
+        $this->setOptions('-ialg '.$oidAlg);
 
         return $this;
     }
 
-    final public function store(string|null $typeStore = null, string|null $nameStore = null): self
+    final public function store(string $typeStore = null, string $nameStore = null): self
     {
         $nameStore ??= 'My';
         $typeStore ??= 'u';
@@ -46,16 +43,16 @@ final class IssuerOptions extends Options
             'Root',
             'CA',
             'Cache',
-            'AddressBook'
+            'AddressBook',
         ];
         $typeStore = mb_strtolower($typeStore);
         if ($typeStore !== 'user' && $typeStore !== 'u') {
             $typeStore = 'm';
         }
-        if (!in_array($nameStore, $stores)) {
-            $store = $typeStore . 'My';
+        if (! in_array($nameStore, $stores)) {
+            $store = $typeStore.'My';
         }
-        $this->setOptions('-istore ' . $store);
+        $this->setOptions('-istore '.$store);
 
         return $this;
     }

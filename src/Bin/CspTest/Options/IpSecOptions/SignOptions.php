@@ -11,6 +11,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\NoPinTrait;
 
 class SignOptions extends Options
 {
-    use AutoContTrait, NoPinTrait, NameTrait, IpSecPasswordTrait, InputFileTrait, SignFileTrait, CertFileTrait;
+    use AutoContTrait, CertFileTrait, InputFileTrait, IpSecPasswordTrait, NameTrait, NoPinTrait, SignFileTrait;
     use GlobalOptionsTrait;
 }

@@ -7,14 +7,12 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PasswordOptions\PasswordOpti
 
 trait LengthTrait
 {
-
     /**
-     * @param int $lengthBits
      * @return PasswordOptions|KeySetOptions|Certificate|LengthTrait
      */
     final public function length(int $lengthBits): self
     {
-        $this->setOptions('-length ' . $lengthBits);
+        $this->setOptions('-length '.$lengthBits);
 
         return $this;
     }

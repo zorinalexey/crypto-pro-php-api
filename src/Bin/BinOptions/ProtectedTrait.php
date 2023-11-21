@@ -7,13 +7,12 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\KeySetOptions\KeySetOptions;
 
 trait ProtectedTrait
 {
-
     /**
      * Установить уровень защиты ключевого контейнера:
      * none (по умолчанию)
      * medium
      * high
-     * @param string $mode
+     *
      * @return ProtectedTrait|Options|KeySetOptions
      */
     final public function protected(string $mode): self
@@ -23,10 +22,10 @@ trait ProtectedTrait
             'medium',
             'high',
         ];
-        if (!in_array(mb_strtolower($mode), $types)) {
+        if (! in_array(mb_strtolower($mode), $types)) {
             $mode = 'none';
         }
-        $this->setOptions('-protected ' . $mode);
+        $this->setOptions('-protected '.$mode);
 
         return $this;
     }

@@ -6,9 +6,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\DelCertOptions;
 
 trait YesTrait
 {
-
     /**
      * Использовать контейнер пользователя (CURRENT_USER)
+     *
      * @return DelCertOptions|YesTrait
      */
     final public function yes(): self

@@ -20,17 +20,17 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\XLongType1Trait;
 
 class AddSignOptions extends Options
 {
-    use SignTypeTrait, KpsOptions, CertTrait, CrlTrait, NoStampCertTrait, StampChainCheckTrait, XLongType1Trait;
-    use CadestTrait, CadesBesTrait, CadesTsaTrait, HashAlgTrait, PinTrait, AuthAttrTrait, AttrTrait, FextTrait;
+    use AttrTrait, AuthAttrTrait, CadesBesTrait, CadesTsaTrait, CadestTrait, FextTrait, HashAlgTrait, PinTrait;
+    use CertTrait, CrlTrait, KpsOptions, NoStampCertTrait, SignTypeTrait, StampChainCheckTrait, XLongType1Trait;
 
     /**
      * Указать файл сообщения для подписания
-     * @param string $inputFile Файл, содержащий исходные данные
-     * @param string $outputFile Файл, который будет содержать созданное сообщение
-     * @return void
+     *
+     * @param  string  $inputFile Файл, содержащий исходные данные
+     * @param  string  $outputFile Файл, который будет содержать созданное сообщение
      */
     final public function file(string $inputFile, string $outputFile): void
     {
-        $this->setOptions('"' . $inputFile . '" "' . $outputFile . '" ');
+        $this->setOptions('"'.$inputFile.'" "'.$outputFile.'" ');
     }
 }

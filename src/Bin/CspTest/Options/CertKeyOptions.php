@@ -8,16 +8,12 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\StoreTrait;
 use CloudCastle\CryptoProPhpApi\Bin\BinOptions\VerboseTrait;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 
-/**
- *
- */
 final class CertKeyOptions extends Options
 {
-    use StoreTrait, ProvtypeTrait, VerboseTrait;
     use GlobalOptionsTrait;
+    use ProvtypeTrait, StoreTrait, VerboseTrait;
 
     /**
-     * @param string $name
      * @return $this
      */
     public function userStore(string $name): self
@@ -28,7 +24,6 @@ final class CertKeyOptions extends Options
     }
 
     /**
-     * @param string $name
      * @return $this
      */
     public function localStore(string $name): self
@@ -39,12 +34,11 @@ final class CertKeyOptions extends Options
     }
 
     /**
-     * @param string $providerName
      * @return $this
      */
     public function oldProv(string $providerName): self
     {
-        $this->setOptions('-oldprov "' . $providerName . '"');
+        $this->setOptions('-oldprov "'.$providerName.'"');
 
         return $this;
     }
@@ -60,23 +54,21 @@ final class CertKeyOptions extends Options
     }
 
     /**
-     * @param string $providerName
      * @return $this
      */
     public function newProv(string $providerName): self
     {
-        $this->setOptions('-newprov "' . $providerName . '"');
+        $this->setOptions('-newprov "'.$providerName.'"');
 
         return $this;
     }
 
     /**
-     * @param int $flag
      * @return $this
      */
     public function flags(int $flag): self
     {
-        $this->setOptions('-flags ' . $flag);
+        $this->setOptions('-flags '.$flag);
 
         return $this;
     }

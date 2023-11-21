@@ -10,9 +10,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\PendCertOptions;
 
 trait KmTrait
 {
-
     /**
      * использовать контейнер компьютера (LOCAL_MACHINE)
+     *
      * @return CspCertOptions|KmTrait|CreateCertOptions|CreateRequestOptions|InstCertOptions|PendCertOptions
      */
     final public function km(): self

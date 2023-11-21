@@ -12,17 +12,21 @@ use CloudCastle\CryptoProPhpApi\Bin\Curl\Curl;
 
 final class CryptoProManager
 {
+    private ?CertMgr $certmgr = null;
 
-    private CertMgr|null $certmgr = null;
-    private CryptCp|null $cryptcp = null;
-    private CpConfig|null $cpconfig = null;
-    private CspTest|null $cspTest = null;
-    private CspTestF|null $cspTestF = null;
+    private ?CryptCp $cryptcp = null;
 
-    private Bin|null $command = null;
+    private ?CpConfig $cpconfig = null;
 
-    private string|null $user = null;
-    private Curl|null $curl = null;
+    private ?CspTest $cspTest = null;
+
+    private ?CspTestF $cspTestF = null;
+
+    private ?Bin $command = null;
+
+    private ?string $user = null;
+
+    private ?Curl $curl = null;
 
     public function __construct()
     {
@@ -39,27 +43,23 @@ final class CryptoProManager
      * Для того, чтобы выполнить команду от имени другого пользователя,
      * необходимо добавить текущего пользователя в группу sudo.
      * Так же у пользователя $userName должна быть активная лицензия Крипто-про
-     * @param string $userName
+     *
      * @return $this
      */
     public function user(string $userName): self
     {
-        $this->user .= 'sudo -u ' . $userName;
+        $this->user = "sudo --user={$userName} -Ss";
 
         return $this;
     }
 
-    /**
-     * @return string|null
-     */
-    public function getUser(): string|null
+    public function getUser(): ?string
     {
         return $this->user;
     }
 
     /**
      * Утилита командной строки для управления сертификатами, списками отзыва сертификатов (CRL) и хранилищами.
-     * @return CertMgr
      */
     public function certMgr(): CertMgr
     {
@@ -68,9 +68,6 @@ final class CryptoProManager
         return $this->command;
     }
 
-    /**
-     * @return CspTest
-     */
     public function cspTest(): CspTest
     {
         $this->command = $this->cspTest;
@@ -78,9 +75,6 @@ final class CryptoProManager
         return $this->command;
     }
 
-    /**
-     * @return CspTestF
-     */
     public function cspTestF(): CspTestF
     {
         $this->command = $this->cspTestF;
@@ -90,7 +84,6 @@ final class CryptoProManager
 
     /**
      * Подпись и шифрование файлов
-     * @return CryptCp
      */
     public function cryptCp(): CryptCp
     {
@@ -101,7 +94,6 @@ final class CryptoProManager
 
     /**
      * Настройка СКЗИ
-     * @return CpConfig
      */
     public function cpConfig(): CpConfig
     {
@@ -112,32 +104,35 @@ final class CryptoProManager
 
     /**
      * Выполнить команду и вернуть результат
-     * @param string|null $msg
-     * @return array
      */
-    public function exec(string|null $msg = null): array
+    public function exec(string $msg = null): array
     {
         $command = $this->command;
         if ($this->user) {
-            $command = $this->user . ' ' . $this->command;
+            $command = $this->user.' '.$this->command;
         }
-        if (!$msg) {
+        if (! $msg) {
             exec($command, $output, $code);
         } else {
             extract($this->proc($command, $msg));
         }
+
         return compact('output', 'code', 'command');
     }
 
     private function proc(string $command, string $msg): array
     {
-        $pipes = false;
+        $pipes = [];
+        $errorFile = __DIR__.DIRECTORY_SEPARATOR.'error.txt';
         $desc = [
-            ["pipe", "r"],
-            ["pipe", "w"],
-            ["file", "/tmp/php_proc_error.txt", "a"]
+            ['pipe', 'r'],
+            ['pipe', 'w'],
+            ['file', $errorFile, 'a'],
         ];
+        $output = [];
+        $code = 255;
         $process = proc_open($command, $desc, $pipes);
+
         if (is_resource($process)) {
             fwrite($pipes[0], $msg);
             fclose($pipes[0]);
@@ -145,15 +140,22 @@ final class CryptoProManager
             fclose($pipes[1]);
             $code = proc_close($process);
         }
+
+        if (! $output && file_exists($errorFile) && ($errors = explode("\n", file_get_contents($errorFile)))) {
+            $output = $errors;
+        }
+
         return compact('output', 'code', 'command');
     }
 
     final public function __toString(): string
     {
         $command = $this->command;
+
         if ($this->user) {
-            $command = $this->user . ' ' . $this->command;
+            $command = $this->user.' '.$this->command;
         }
+
         return $command;
     }
 

@@ -18,6 +18,6 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\SgTrait;
 
 class CspCertOptions extends Options
 {
-    use ProvnameTrait, ProvtypeTrait, ContainerTrait, DmTrait, DuTrait, DfTrait, DerTrait, EndStoreNameTrait;
-    use KuTrait, KmTrait, ExTrait, SgTrait;
+    use ContainerTrait, DerTrait, DfTrait, DmTrait, DuTrait, EndStoreNameTrait, ProvnameTrait, ProvtypeTrait;
+    use ExTrait, KmTrait, KuTrait, SgTrait;
 }

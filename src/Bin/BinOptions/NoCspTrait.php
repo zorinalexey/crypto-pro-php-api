@@ -10,6 +10,7 @@ trait NoCspTrait
 {
     /**
      * Не устанавливать сертификат в контейнер
+     *
      * @return InstCertOptions|NoCspTrait|CreateCertOptions|PendCertOptions
      */
     final public function noCsp(): self

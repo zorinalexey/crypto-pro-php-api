@@ -10,9 +10,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\PendCertOptions;
 
 trait KuTrait
 {
-
     /**
      * Использовать контейнер пользователя (CURRENT_USER)
+     *
      * @return CspCertOptions|KuTrait|CreateCertOptions|CreateRequestOptions|InstCertOptions|PendCertOptions
      */
     final public function ku(): self

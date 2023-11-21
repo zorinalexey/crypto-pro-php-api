@@ -8,6 +8,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 
 class RegOptions extends Options
 {
-    use SilentTrait, MyCertTrait, TCertTrait, ListTrait, OtherCertTrait, KeyTrait, SavePinTrait;
     use GlobalOptionsTrait;
+    use KeyTrait, ListTrait, MyCertTrait, OtherCertTrait, SavePinTrait, SilentTrait, TCertTrait;
 }

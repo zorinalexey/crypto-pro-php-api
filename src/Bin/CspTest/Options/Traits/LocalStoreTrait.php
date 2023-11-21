@@ -6,10 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\LowEncOptions\StoreOptions;
 
 trait LocalStoreTrait
 {
-
-    /**
-     * @return StoreOptions
-     */
     final public function localStore(): StoreOptions
     {
         $opt = new StoreOptions('MY');

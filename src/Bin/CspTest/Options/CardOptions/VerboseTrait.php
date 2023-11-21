@@ -10,6 +10,4 @@ trait VerboseTrait
 
         return $this;
     }
-
-
 }

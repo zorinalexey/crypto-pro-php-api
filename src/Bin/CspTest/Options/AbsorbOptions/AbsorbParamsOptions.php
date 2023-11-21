@@ -11,6 +11,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PropertyOptions\MachineTrait
 
 class AbsorbParamsOptions extends Options
 {
-    use ProviderTrait, ProvtypeTrait, MachineTrait, SilentTrait, PatternTrait, AutoProvTrait, FilterByTypeTrait;
+    use AutoProvTrait, FilterByTypeTrait, MachineTrait, PatternTrait, ProviderTrait, ProvtypeTrait, SilentTrait;
     use GlobalOptionsTrait;
 }

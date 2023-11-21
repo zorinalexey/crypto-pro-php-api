@@ -21,17 +21,16 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\LowEncOptions\StoreOptions;
 
 trait IssuerTrait
 {
-
     /**
      * Критерии поиска для сертификата.
      * Если более одного сертификата удовлетворяют заданным критериям,
      * пользователю будет предложено выбрать один из найденных.
-     * @param string $searchString
+     *
      * @return AddAttrOptions|IssuerTrait|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|ListTmplOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|StoreOptions
      */
     final public function issuer(string $searchString): self
     {
-        $this->setOptions("-issuer '" . $searchString . "'");
+        $this->setOptions("-issuer '".$searchString."'");
 
         return $this;
     }

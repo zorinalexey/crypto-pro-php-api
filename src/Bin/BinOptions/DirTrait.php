@@ -9,15 +9,14 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\VSignOptions;
 
 trait DirTrait
 {
-
     /**
      * Папка для файлов со значениями хэш-функции (по умолчанию текущая)
-     * @param string $path
+     *
      * @return SignfOptions|DirTrait|AddSignfOptions|HashOptions|VSignOptions
      */
     final public function dir(string $path): self
     {
-        $this->setOptions('-dir "' . $path . '"');
+        $this->setOptions('-dir "'.$path.'"');
 
         return $this;
     }

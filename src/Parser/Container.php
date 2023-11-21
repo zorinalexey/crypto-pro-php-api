@@ -6,7 +6,6 @@ use CloudCastle\CryptoProPhpApi\CryptoProManager;
 
 final class Container
 {
-
     private CryptoProManager $mgr;
 
     public function __construct(string $container, CryptoProManager $mgr)

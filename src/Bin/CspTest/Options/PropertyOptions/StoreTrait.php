@@ -4,9 +4,7 @@ namespace CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PropertyOptions;
 
 trait StoreTrait
 {
-
     /**
-     * @param string $type
      * @return $this
      */
     final public function store(string $type): self
@@ -15,9 +13,8 @@ trait StoreTrait
         if ($store !== 'FILE') {
             $store = 'MEM';
         }
-        $this->setOptions('-store ' . $store);
+        $this->setOptions('-store '.$store);
 
         return $this;
     }
-
 }

@@ -8,6 +8,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 
 class DefProviderOptions extends Options
 {
-    use ProvtypeTrait;
     use GlobalOptionsTrait;
+    use ProvtypeTrait;
 }

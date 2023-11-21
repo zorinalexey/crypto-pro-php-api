@@ -9,6 +9,7 @@ trait SMimeTrait
 {
     /**
      * включить возможности S/MIME (только Windows)
+     *
      * @return CreateRequestOptions|SMimeTrait|CreateCertOptions
      */
     final public function smime(): self

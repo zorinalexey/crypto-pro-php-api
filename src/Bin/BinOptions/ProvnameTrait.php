@@ -13,16 +13,15 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\PendCertOptions;
 
 trait ProvnameTrait
 {
-
-
     /**
      * Имя провайдера.
-     * @param string $name Имя провайдера.
+     *
+     * @param  string  $name Имя провайдера.
      * @return CreateCertOptions|ProvnameTrait|Options|SetDefOptions|CreateRequestOptions|CspCertOptions|HashOptions|InstCertOptions|PendCertOptions
      */
     final public function provname(string $name): self
     {
-        $this->setOptions('-provname "' . $name . '"');
+        $this->setOptions('-provname "'.$name.'"');
 
         return $this;
     }

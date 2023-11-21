@@ -6,10 +6,6 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\LowEncOptions\StoreOptions;
 
 trait UserStoreTrait
 {
-
-    /**
-     * @return StoreOptions
-     */
     final public function userStore(): StoreOptions
     {
         $opt = new StoreOptions('my');

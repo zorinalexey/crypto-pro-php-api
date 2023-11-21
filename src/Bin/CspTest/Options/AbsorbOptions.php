@@ -6,16 +6,10 @@ use CloudCastle\CryptoProPhpApi\Abstracts\Options;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\GlobalOptionsTrait;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\AbsorbOptions\AbsorbParamsOptions;
 
-/**
- *
- */
 final class AbsorbOptions extends Options
 {
     use GlobalOptionsTrait;
 
-    /**
-     * @return AbsorbParamsOptions
-     */
     public function roots(): AbsorbParamsOptions
     {
         $opt = new AbsorbParamsOptions();
@@ -25,9 +19,6 @@ final class AbsorbOptions extends Options
         return $opt;
     }
 
-    /**
-     * @return AbsorbParamsOptions
-     */
     public function certs(): AbsorbParamsOptions
     {
         $opt = new AbsorbParamsOptions();

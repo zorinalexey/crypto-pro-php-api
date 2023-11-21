@@ -4,7 +4,6 @@ namespace CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\AbsorbOptions;
 
 trait AutoProvTrait
 {
-
     /**
      * @return $this
      */

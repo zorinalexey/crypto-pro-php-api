@@ -10,9 +10,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\PendCertOptions;
 
 trait DuTrait
 {
-
     /**
      * Скопировать в хранилище пользователя (CURRENT_USER)
+     *
      * @return CspCertOptions|DuTrait|CopyCertOptions|CreateCertOptions|InstCertOptions|PendCertOptions
      */
     final public function du(): self

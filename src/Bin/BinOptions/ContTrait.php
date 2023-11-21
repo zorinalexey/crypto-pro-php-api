@@ -11,12 +11,12 @@ trait ContTrait
 {
     /**
      * Задать имя ключевого контейнера
-     * @param string $container
+     *
      * @return InstCertOptions|ContTrait|CreateCertOptions|CreateRequestOptions|PendCertOptions
      */
     final public function container(string $container): self
     {
-        $this->setOptions('-cont "' . $container . '"');
+        $this->setOptions('-cont "'.$container.'"');
 
         return $this;
     }

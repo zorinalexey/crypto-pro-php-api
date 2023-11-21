@@ -4,7 +4,6 @@ namespace CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\KeySetOptions;
 
 trait FQcnTrait
 {
-
     /**
      * @return KeySetOptions|FQcnTrait
      */

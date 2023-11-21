@@ -8,14 +8,12 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions\SignOptions as
 
 trait SignatureTrait
 {
-
     /**
-     * @param string $file
      * @return SignOptions|KeySetOptions|SfSignOpt|SignatureTrait
      */
     final public function signature(string $file): self
     {
-        $this->setOptions('-signature "' . $file . '"');
+        $this->setOptions('-signature "'.$file.'"');
 
         return $this;
     }

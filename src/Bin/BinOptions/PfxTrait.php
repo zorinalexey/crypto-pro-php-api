@@ -8,6 +8,7 @@ trait PfxTrait
 {
     /**
      * Работать с PFX-файлом.
+     *
      * @return PfxTrait|Options
      */
     final public function pfx(): self

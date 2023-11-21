@@ -7,11 +7,10 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\KpsOptions;
 
 final class StoreOptions extends Options
 {
-
-    public function __construct(string|null $store = null)
+    public function __construct(string $store = null)
     {
         if ($store) {
-            $this->setOptions('-' . $store);
+            $this->setOptions('-'.$store);
         }
     }
 

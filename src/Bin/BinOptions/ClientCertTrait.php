@@ -8,9 +8,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\PendCertOptions;
 
 trait ClientCertTrait
 {
-
     /**
      * Использовать сертификат для аутентификации на КриптоПро УЦ
+     *
      * @return ClientCertTrait|CreateCertOptions|ListTmplOptions|PendCertOptions
      */
     final public function clientCert(): self

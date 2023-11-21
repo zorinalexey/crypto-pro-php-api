@@ -13,6 +13,7 @@ trait CadestTrait
 {
     /**
      * Создать подписи CAdES-T
+     *
      * @return CadestTrait|AddSignfOptions|AddSignOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions
      */
     public function cadest(): self

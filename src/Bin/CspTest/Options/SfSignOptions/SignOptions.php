@@ -23,8 +23,8 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits\UserStoreTrait;
 
 class SignOptions extends Options
 {
-    use InputFileTrait, OutputFileTrait, UserStoreTrait, LocalStoreTrait, PasswordTrait, DetachedTrait, AddTrait;
-    use SignatureTrait, AlgTrait, AskTrait, Base64Trait, AddSigTimeTrait, CadesStrictTrait, CadesDisableTrait;
-    use SilentTrait, ReqCompliantTrait;
+    use AddSigTimeTrait, AlgTrait, AskTrait, Base64Trait, CadesDisableTrait, CadesStrictTrait, SignatureTrait;
+    use AddTrait, DetachedTrait, InputFileTrait, LocalStoreTrait, OutputFileTrait, PasswordTrait, UserStoreTrait;
     use GlobalOptionsTrait;
+    use ReqCompliantTrait, SilentTrait;
 }

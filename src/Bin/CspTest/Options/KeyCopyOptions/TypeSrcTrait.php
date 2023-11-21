@@ -7,12 +7,11 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\KeyCopyOptions;
 trait TypeSrcTrait
 {
     /**
-     * @param string $name
      * @return ProvDestTrait|KeyCopyOptions
      */
     final public function typeSrc(string $name): self
     {
-        $this->setOptions('-typesrc "' . $name . '"');
+        $this->setOptions('-typesrc "'.$name.'"');
 
         return $this;
     }

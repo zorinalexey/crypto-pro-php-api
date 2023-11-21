@@ -9,12 +9,13 @@ trait KeySizeTrait
 {
     /**
      * Установить длину ключа
-     * @param int $size Длинна ключа
+     *
+     * @param  int  $size Длинна ключа
      * @return KeySizeTrait|CreateCertOptions|CreateRequestOptions
      */
     final public function keySize(int $size): self
     {
-        $this->setOptions('-keysize ' . $size);
+        $this->setOptions('-keysize '.$size);
 
         return $this;
     }

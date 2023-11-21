@@ -1,6 +1,5 @@
 <?php
 
-
 namespace CloudCastle\CryptoProPhpApi\Parser\Traits;
 
 use DateTime;
@@ -13,6 +12,6 @@ trait DateTrait
      */
     private function getDate(string $date): DateTime
     {
-        return new DateTime(date("d.m.Y H:i:s", strtotime(str_replace('/', '.', $date))));
+        return new DateTime(date('d.m.Y H:i:s', strtotime(str_replace('/', '.', $date))));
     }
 }

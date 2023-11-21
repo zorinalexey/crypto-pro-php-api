@@ -13,9 +13,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\SignOptions;
 
 trait DerTrait
 {
-
     /**
      * Использовать для представления сертификата или CRL кодировку DER (значение по умолчанию).
+     *
      * @return SignOptions|DerTrait|Options|AddSignfOptions|CopyCertOptions|CreateRequestOptions|CspCertOptions|EncryptOptions|SignfOptions
      */
     final public function der(): self

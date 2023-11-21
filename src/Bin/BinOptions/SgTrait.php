@@ -8,9 +8,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options\CspCertOptions;
 
 trait SgTrait
 {
-
     /**
      * Использовать контейнер пользователя (CURRENT_USER)
+     *
      * @return CspCertOptions|SgTrait|CreateCertOptions|CreateRequestOptions
      */
     final public function sg(): self

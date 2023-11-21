@@ -11,14 +11,12 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfEncOptions\SfEncOptions;
 
 trait InputFileTrait
 {
-
     /**
-     * @param string $filePath
      * @return InputFileTrait|HashOptions|KeySetOptions|EncryptOptions|SignOptions|PropertyCommandOptions|SfEncOptions|\CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions\SignOptions
      */
     final public function inputFile(string $filePath): self
     {
-        $this->setOptions('-in "' . $filePath . '"');
+        $this->setOptions('-in "'.$filePath.'"');
 
         return $this;
     }

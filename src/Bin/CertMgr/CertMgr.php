@@ -7,7 +7,7 @@ use CloudCastle\CryptoProPhpApi\Bin\Bin;
 
 final class CertMgr extends Bin
 {
-    private static string $bin = self::APP_BIN_PATH . DIRECTORY_SEPARATOR . 'certmgr' . self::APP_EXT;
+    private static string $bin = self::APP_BIN_PATH.DIRECTORY_SEPARATOR.'certmgr'.self::APP_EXT;
 
     public function __construct()
     {
@@ -16,7 +16,6 @@ final class CertMgr extends Bin
 
     /**
      * Вывести сертификаты или CRL из хранилища, файла или контейнера.
-     * @return AbstractOptions|Options
      */
     public function list(): AbstractOptions|Options
     {
@@ -29,7 +28,6 @@ final class CertMgr extends Bin
     /**
      * Установить сертификат или CRL в хранилище.
      * Может создать ссылку из сертификата на закрытый ключ, если необходимо.
-     * @return AbstractOptions|Options
      */
     public function install(): Options|AbstractOptions
     {
@@ -41,7 +39,6 @@ final class CertMgr extends Bin
 
     /**
      * Сменить кодировку сертификата или CRL.
-     * @return Options|AbstractOptions
      */
     public function decode(): Options|AbstractOptions
     {
@@ -53,7 +50,6 @@ final class CertMgr extends Bin
 
     /**
      * Экспортировать сертификат или CRL из хранилища или контейнера в файл.
-     * @return Options|AbstractOptions
      */
     public function export(): Options|AbstractOptions
     {
@@ -65,7 +61,6 @@ final class CertMgr extends Bin
 
     /**
      * Удалить сертификат или CRL из хранилища.
-     * @return Options|AbstractOptions
      */
     public function delete(): Options|AbstractOptions
     {
@@ -77,7 +72,6 @@ final class CertMgr extends Bin
 
     /**
      * Вывести перечень вложенных логических хранилищ выбранного хранилища сертификатов.
-     * @return Options|AbstractOptions
      */
     public function enumStores(): Options|AbstractOptions
     {
@@ -86,5 +80,4 @@ final class CertMgr extends Bin
 
         return $this->getOptions();
     }
-
 }

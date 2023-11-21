@@ -24,6 +24,7 @@ trait AllTrait
 {
     /**
      * Использовать все подходящие сертификаты (CRL).
+     *
      * @return ListTmplOptions|AllTrait|Options|\CloudCastle\CryptoProPhpApi\Bin\CryptCp\Options|AddAttrOptions|AddSignfOptions|AddSignOptions|CopyCertOptions|CreateCertOptions|DecryptOptions|DelCertOptions|DelSignOptions|EncryptOptions|PendCertOptions|SignfOptions|SignOptions|VerifyOptions|VSignOptions|StoreOptions
      */
     final public function all(): self

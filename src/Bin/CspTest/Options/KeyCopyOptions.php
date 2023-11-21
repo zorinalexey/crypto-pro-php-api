@@ -22,8 +22,8 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PasswordOptions\RewritableTr
 
 final class KeyCopyOptions extends Options
 {
-    use ProvSrcTrait, ProvDestTrait, TypeSrcTrait, TypeDestTrait, SilentTrait, RewritableTrait, MachineSrcTrait;
-    use MachineDestTrait, ContSrcTrait, ContDestTrait, ArchivableTrait, PinSrcTrait, PinDestTrait, TraceTrait;
-    use TftmTrait;
+    use ArchivableTrait, ContDestTrait, ContSrcTrait, MachineDestTrait, PinDestTrait, PinSrcTrait, TraceTrait;
     use GlobalOptionsTrait;
+    use MachineSrcTrait, ProvDestTrait, ProvSrcTrait, RewritableTrait, SilentTrait, TypeDestTrait, TypeSrcTrait;
+    use TftmTrait;
 }

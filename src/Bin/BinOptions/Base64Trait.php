@@ -10,9 +10,9 @@ use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfEncOptions\SfEncOptions;
 
 trait Base64Trait
 {
-
     /**
      * Использовать для представления сертификата или CRL кодировку base64.
+     *
      * @return SignOptions|Base64Trait|Options|KeySetOptions|EncryptOptions|SfEncOptions|\CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions\SignOptions
      */
     final public function base64(): self

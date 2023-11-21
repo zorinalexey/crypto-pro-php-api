@@ -10,16 +10,16 @@ use CloudCastle\CryptoProPhpApi\Bin\BinOptions\StrictTrait;
 
 final class EncryptOptions extends Options
 {
-    use KpsOptions, DerTrait, StrictTrait, EncryptionAlgTrait, KeepBadFilesTrait;
+    use DerTrait, EncryptionAlgTrait, KeepBadFilesTrait, KpsOptions, StrictTrait;
 
     /**
      * Указать файл для шифрования
-     * @param string $inputFile Файл, содержащий исходные данные
-     * @param string $outputFile Файл, который будет содержать созданное сообщение
-     * @return void
+     *
+     * @param  string  $inputFile Файл, содержащий исходные данные
+     * @param  string  $outputFile Файл, который будет содержать созданное сообщение
      */
     final public function file(string $inputFile, string $outputFile): void
     {
-        $this->setOptions('"' . $inputFile . '" "' . $outputFile . '" ');
+        $this->setOptions('"'.$inputFile.'" "'.$outputFile.'" ');
     }
 }

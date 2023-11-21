@@ -8,12 +8,12 @@ trait KeyIdTrait
 {
     /**
      * Идентификатор ключа для фильтрации.
-     * @param string $keyid
+     *
      * @return KeyIdTrait|Options
      */
     final public function keyid(string $keyid): self
     {
-        $this->setOptions('-keyid ' . $keyid);
+        $this->setOptions('-keyid '.$keyid);
 
         return $this;
     }

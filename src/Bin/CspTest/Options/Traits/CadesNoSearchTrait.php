@@ -4,7 +4,6 @@ namespace CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\Traits;
 
 trait CadesNoSearchTrait
 {
-
     /**
      * @return $this
      */

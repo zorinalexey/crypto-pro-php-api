@@ -11,12 +11,12 @@ trait CadesTsaTrait
 {
     /**
      * Служба штампов времени для CAdES-X Long Type 1, CAdES-T
-     * @param string $url
+     *
      * @return CadesTsaTrait|AddSignfOptions|AddSignOptions|SignfOptions|SignOptions
      */
     final public function file(string $url): self
     {
-        $this->setOptions('-cadestsa "' . $url . '"');
+        $this->setOptions('-cadestsa "'.$url.'"');
 
         return $this;
     }

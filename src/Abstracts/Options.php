@@ -11,39 +11,46 @@ abstract class Options
         return implode(' ', $this->getOptions());
     }
 
-    /**
-     * @return array
-     */
     final protected function getOptions(): array
     {
         return $this->options;
     }
 
     /**
-     * @param string|Options $options Значение опции
-     * @param string|null $key Ключ индекса для добавления или изменения значения
-     * @param string|null $separator Разделитель значений опции
-     * @return bool
+     * @param  string|Options  $options Значение опции
+     * @param  string|null  $key Ключ индекса для добавления или изменения значения
+     * @param  string|null  $separator Разделитель значений опции
      */
-    final protected function setOptions(string|self $options, string|null $key = null, string|null $separator = null): bool
+    final protected function setOptions(string|self $options, string $key = null, string $separator = null): bool
     {
         if ($options instanceof self) {
             $this->options[] = $options;
+
             return true;
         }
-        if (!$key) {
+        if (! $key) {
             $this->options[] = $options;
+
             return true;
         }
-        if ($separator === null || !isset($this->options[$key])) {
-            $this->options[$key] = $key . ' ' . $options;
+        if ($separator === null || ! isset($this->options[$key])) {
+            $this->options[$key] = $key.' '.$options;
+
             return true;
         }
         if (isset($this->options[$key]) && $separator) {
-            $this->options[$key] .= $separator . $options;
+            $this->options[$key] .= $separator.$options;
+
             return true;
         }
+
         return false;
     }
 
+    final public function setOption(string $paramName, string $paramValue): static
+    {
+        $this->setOptions($paramName, $paramValue);
+
+        return $this;
+    }
 }

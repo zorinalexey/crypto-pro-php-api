@@ -21,7 +21,7 @@ final class RcOptions extends Options
 
     public function request(string $filePath): RcIssuerOption
     {
-        $this->setOptions('-reg "' . $filePath . '"');
+        $this->setOptions('-reg "'.$filePath.'"');
         $opt = new RcIssuerOption();
         $this->setOptions($opt);
 
@@ -30,7 +30,7 @@ final class RcOptions extends Options
 
     public function certificate(string $filePath): RcIssuerOption
     {
-        $this->setOptions('-cert "' . $filePath . '"');
+        $this->setOptions('-cert "'.$filePath.'"');
         $opt = new RcIssuerOption();
         $this->setOptions($opt);
 
@@ -45,6 +45,4 @@ final class RcOptions extends Options
 
         return $opt;
     }
-
-
 }
